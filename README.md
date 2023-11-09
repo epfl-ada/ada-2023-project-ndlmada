@@ -44,7 +44,7 @@ $p(t+1) = p(t)H$, we recognise here a markov chain. <br>If this markov chain is 
 To make it ergodic we have to connect the dangeling nodes to the graph 
 
 We define: 
-<br>$w= $ indicator of dangeling node <br> $e= $ vector full of 1's
+<br>$w=$ indicator of dangeling node <br> $e=$ vector full of 1's
 
 So $\hat{H} = H + \frac{1}{n}(w^{T}e)$
 
