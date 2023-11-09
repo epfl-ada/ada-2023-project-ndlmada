@@ -10,21 +10,22 @@ ada-2023-project-ndlmada created by GitHub Classroom
 
 #### Defining our problem 
 
-Lets make a graph of the Stars, when one user goes form *Rhianna* to *Madonna* then we create a drected edge *Rihanna* --> *Madonna* in our graph.
+Lets make a graph of the Stars, when one user goes form *Rhianna* to *Madonna* then we create a directed edge *Rihanna* --> *Madonna* in our graph.
 
-Now when we look at the graph we could simply say "ok, lets look at the in degree of each node and the Star with the most in degree would be the most important person".
+Now when we look at the graph we could simply say "ok, lets look at the $in$ degree of each node and the Star with the most in degree would be the most important person".
 
 If the importance score of a Star is denoted by $\pi_u$ then $\pi_u = i_{u}$
 
-But that would be maybe too easy and would not give us the best results. Maybe a star is more clicked on beacause it is in every page. For example, people want to find France and they know that *Jean Dujardin* comes from France but he is not everywhere, however *George Clooney* is on every wikipedia page, so they click on him and then they click on *Jean Dujardin*. In our simple model looking only at in degrees, *George* would be more important, but the real important star is *Jean Dujardin*
+But that would be maybe too easy and would not give us the best results. Maybe a star is more clicked on beacause it is in every page. For example, people want to find France and they know that *Jean Dujardin* comes from France but he is not everywhere, however *George Clooney* is on every wikipedia page, so they click on him and then click on *Jean Dujardin*. In our simple model looking only at in degrees, *George* would be more important, but the real important star is *Jean Dujardin*
 
 So we will look at an other more complicated model: 
 
-$\pi_{u} = \sum_{(v,u)}\pi_{v}$ <font size="1">where (u,v) denotes if there is a directed edge form v to u</font>
+$\pi_{u} = \sum_{(v,u)}\frac{\pi_{v}}{o_{v}}$ <font size="1">where (u,v) denotes if there is a directed edge form v to u and o is the out degree of a node</font>
 
 More important endorser = more important people 
+Your importance is the sum of the importance of all the other peoples that point to you, but if  the person pointing to you is linked with a lot of other peoples then the importance of this link is diminushed. 
 
-So we have a graph of people, maybe the graph of people is circular and maybe there is a lot of stars, how do we find $\bar{\pi} = [\pi_{1}, \pi_{2}, ...., \pi_{n}]$ which satisfies the above condition ? 
+So we have a graph of people. Maybe the graph of people is circular and maybe there is a lot of stars, how do we find $\bar{\pi} = [\pi_{1}, \pi_{2}, ...., \pi_{n}]$ which satisfies the above condition ? 
 
 We define the probability for a Random walk to go from node u to v as:
 $$\begin{equation}
