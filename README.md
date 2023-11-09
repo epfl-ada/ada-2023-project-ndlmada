@@ -10,7 +10,7 @@ ada-2023-project-ndlmada created by GitHub Classroom
 
 #### Defining our problem 
 
-Lets make a graph of the Stars, when one user goes form *Rhianna* to *Madonna* then we create a directed edge *Rihanna* --> *Madonna* in our graph.
+Lets make a graph of the Stars, when one user goes form *Rihanna* to *Madonna* then we create a directed edge *Rihanna* --> *Madonna* in our graph.
 
 Now when we look at the graph we could simply say "ok, lets look at the $in$ degree of each node and the Star with the most in degree would be the most important person".
 
