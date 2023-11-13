@@ -2,7 +2,14 @@
 ada-2023-project-ndlmada created by GitHub Classroom
 
 
+## Abstract
 
+Wikispeedia is a game where users get two articles, and have to go from the first one to the second one exclusicely by following links. By studying the paths chosen by players, we can capture their chain of thought and find out what key attributes about their goal they used to reach it. 
+In this context, we are interested in people. Indeed, as humans, we know the name of thousands of famous people, whether it be for their music, their scientific discoveries or political impact. But is it really the case ? Or do we just associate them with more famous people to form a cluster of celebrities associated to a central persona. And finally, do we have an unconscious bias between gender that makes us remember women because of the men in their lives and not because of their personnal successes ? And is it linked to their fame domain ? Because the first step towards reducing a bias is to acknowledge its existence, we want to determine if there is any in the users choices, so we can consciously try to reduce ours. 
+
+## Research question
+
+By focusing on article about people, we want to determine why people are famous. In particular we would like to know wheter people reach fame because of their accomplishements, or rather their social circle. Indeed, as we know how users got to a certain page, we can track their chain of thought and which elements concerning the given celebrity they used to find them. Furthermore we would like to see if we can observe any bias between gender or famous people categories. For example, are french painters better know for their friends, or for the artistic movement they belonged to. By analyzing user paths, as well as the overall connection between articles, we aim to answer these questions. 
 
 ## Method
 
@@ -70,5 +77,7 @@ We discused here about ranking stars but this method is applicable to a lot of o
 
 We could also rank the different pages by looking at the links on the HTML files and creating a graph with that and ranking the pages that way. You could then compare your ranking with the path that user took and the ranking with the html link and compare the two. Maybe there is interesting comparaisons to make. 
 
+## Timeline
 
+Friday 22nd december, 6pm, drink free mulled wine with agepoly on the esplanade :)
 
