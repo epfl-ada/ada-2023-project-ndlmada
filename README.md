@@ -22,6 +22,10 @@ To answer our question if people are famous because of their social environment 
 
 ### Ranking 
 
+### Identifying gender
+
+To be able to make our observations of differences between men and women, we need to determine which people articles are about women and which about men. However, in wikipedia, it isn't explicitely displayed. We therefore need to determine it ourselves. To do so, we want to use a pretrained BERT model that we will fine tune for our unsupervised learning task in order to split all those articles in 2 cateogories. 
+
 #### Defining our problem 
 
 Lets make a graph of the Stars, when one user goes form *Rihanna* to *Madonna* then we create a directed edge *Rihanna* --> *Madonna* in our graph.
