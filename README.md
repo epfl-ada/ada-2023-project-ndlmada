@@ -13,6 +13,13 @@ By focusing on article about people, we want to determine why people are famous.
 
 ## Method
 
+### Paths analysis
+To answer our question if people are famous because of their social environment or because of the things they did in life, we will analyse the behavior of peopole when navigating Wikispeedia : 
+1. We will try and understand if people usually follow the shortest path to reach given end articles. This will be done using the known network graph and try to understand if people use more or less steps to go from the start article to the goal article. 
+2. We will check if two articles about people that are linked means that the people linked come from the same domains. This will be done using the classification of articles provided by Wikispeedia and quantifying the relatedness of the two people. 
+3. We will establish if articles that talk about people on Wikispeedia are mostly visited coming from articles about people (thus hinting to a more "social circle" way of remembering) or about unrelated themes (thus hinting to the fact that we remember people from what they have done). We will use the global connection graph to establish if articles about people are mostly linked to other articles of people and if this could influence the choice when navigating Wikispeedia.
+
+
 ### Ranking 
 
 #### Defining our problem 
