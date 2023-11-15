@@ -4,29 +4,41 @@ ada-2023-project-ndlmada created by GitHub Classroom
 
 ## Abstract
 
-Wikispeedia is a game where users get two articles, and have to go from the first one to the second one exclusicely by following links. By studying the paths chosen by players, we can capture their chain of thought and find out what key attributes about their goal they used to reach it. 
-In this context, we are interested in people. Indeed, as humans, we know the name of thousands of famous people, whether it be for their music, their scientific discoveries or political impact. But is it really the case ? Or do we just associate them with more famous people to form a cluster of celebrities associated to a central persona. And finally, do we have an unconscious bias between gender that makes us remember women because of the men in their lives and not because of their personnal successes ? And is it linked to their fame domain ? Because the first step towards reducing a bias is to acknowledge its existence, we want to determine if there is any in the users choices, so we can consciously try to reduce ours. 
+Wikispeedia is a game where users get two articles, and have to go from the first one to the second one exclusively by following links. By studying the paths chosen by players, we can capture their chain of thought and find out what key attributes about their goal they used to reach it. 
+In this context, we are interested in people. Indeed, as humans, we know the name of thousands of famous people, whether it be for their music, their scientific discoveries or political impact. But is it really the case? Or do we just associate them with more famous people to form a cluster of celebrities associated to a central persona. And finally, do we have an unconscious bias between gender that makes us remember women because of the men in their lives and not because of their personnal successes? And is it linked to their fame domain? Because the first step towards reducing a bias is to acknowledge its existence, we want to determine if there is any in the users choices, so we can consciously try to reduce ours. 
 
 ## Research question
 
-By focusing on article about people, we want to determine why people are famous. In particular we would like to know wheter people reach fame because of their accomplishements, or rather their social circle. Indeed, as we know how users got to a certain page, we can track their chain of thought and which elements concerning the given celebrity they used to find them. Furthermore we would like to see if we can observe any bias between gender or famous people categories. For example, are french painters better know for their friends, or for the artistic movement they belonged to. By analyzing user paths, as well as the overall connection between articles, we aim to answer these questions. 
+By focusing on articles about people, we want to determine why people are famous. In particular, we would like to know whether people reach fame because of their accomplishments, or rather their social circle. Indeed, as we know how users got to a certain page, we can track their chain of thought and which elements concerning the given celebrity they used to find them. Furthermore, we would like to see if we can observe any bias between gender or famous people categories. For example, are French painters better known for their friends, or for the artistic movement they belonged to. By analyzing user paths, as well as the overall connection between articles, we aim to answer these questions. 
 
 ## Method
+### Pre-processing 
+#### Dataset
+We began our data exploration in the [pre-processing](pre-processing.ipynb) Jupyter notebook. Multiple steps of this pre-processing might be useful for further analysis. We decided to create a [utilities](utilities.py) python script containing useful functions including the summary function of the pre-processing applied in the notebook above. 
+
+We looked after the format and the content of the _wikispeedia paths-and-graph_ dataset, revealing manageable sizes of datasets for our analysis. Missing values were only found in the finished path dataset: in the _hashedIpAddress_ (3 missing out of 51,318) and _rating_ (around 50% of missing values) columns. The ratings are optionally assessed by players to evaluate the path's difficulty. Our analysis won't use either the IP address of the players or the ratings. So we decided to simply remove those two columns. With the modified dataset, we did some plots to compare and learn more about the data, focusing particularly on people categories, and their domains.
+
+#### Wikispeedia game
+ We also took some time to examine the game and the links present on the pages. We identified links that were not countable in the game path. For instance, clicking on an image could lead to a page with other article links, but the game would stop tracking the following actions. In our analysis, we need to pay attention to which hyperlinks we must take into account.
+
+### Connection graphs
+
 
 ### Paths analysis
-To answer our question if people are famous because of their social environment or because of the things they did in life, we will analyse the behavior of peopole when navigating Wikispeedia : 
+To answer our question if people are famous because of their social environment or because of the things they did in life, we will analyse the behavior of people when navigating Wikispeedia : 
 1. We will try and understand if people usually follow the shortest path to reach given end articles. This will be done using the known network graph and try to understand if people use more or less steps to go from the start article to the goal article. 
 2. We will check if two articles about people that are linked means that the people linked come from the same domains. This will be done using the classification of articles provided by Wikispeedia and quantifying the relatedness of the two people. 
-3. We will establish if articles that talk about people on Wikispeedia are mostly visited coming from articles about people (thus hinting to a more "social circle" way of remembering) or about unrelated themes (thus hinting to the fact that we remember people from what they have done). We will use the global connection graph to establish if articles about people are mostly linked to other articles of people and if this could influence the choice when navigating Wikispeedia.
+3. We will establish if articles that talk about people on Wikispeedia are mostly visited coming from articles about people (thus hinting to a more "social circle" way of remembering) or about related themes (thus hinting to the fact that we remember people from what they have done). We will use the global connection graph to establish if articles about people are mostly linked to other articles of people and if this could influence the choice when navigating Wikispeedia.
 
+### articles analysis
 
 ### Ranking 
 
 ### Identifying gender
 
-To be able to make our observations of differences between men and women, we need to determine which people articles are about women and which about men. However, in wikipedia, it isn't explicitely displayed. We therefore need to determine it ourselves. To do so, we want to use a pretrained BERT model that we will fine tune for our unsupervised learning task in order to split all those articles in 2 cateogories. 
+To be able to make our observations of differences between men and women, we need to determine which people articles are about women and which are about men. However, in wikipedia, it isn't explicitely displayed. We therefore need to determine it ourselves. To do so, we want to use a pretrained BERT model that we will fine tune for our unsupervised learning task in order to split all those articles in 2 categories. 
 
-#### Defining our problem 
+#### Page rank
 
 Lets make a graph of the Stars, when one user goes form *Rihanna* to *Madonna* then we create a directed edge *Rihanna* --> *Madonna* in our graph.
 
