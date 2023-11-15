@@ -14,7 +14,7 @@ By focusing on articles about people, we want to determine why people are famous
 ## Method
 ### Pre-processing 
 #### Dataset
-We began our data exploration in the [pre-processing](pre-processing.ipynb) Jupyter notebook. Multiple steps of this pre-processing might be useful for further analysis. We decided to create a [utilities](utilities.py) python script containing useful functions including the summary function of the pre-processing applied in the notebook above. 
+We began our data exploration in the [pre-processing](pre_processing.ipynb) Jupyter notebook. Multiple steps of this pre-processing might be useful for further analysis. We decided to create a [utilities](utilities.py) python script containing useful functions including the summary function of the pre-processing applied in the notebook above. 
 
 We looked after the format and the content of the _wikispeedia paths-and-graph_ dataset, revealing manageable sizes of datasets for our analysis. Missing values were only found in the finished path dataset: in the _hashedIpAddress_ (3 missing out of 51,318) and _rating_ (around 50% of missing values) columns. The ratings are optionally assessed by players to evaluate the path's difficulty. Our analysis won't use either the IP address of the players or the ratings. So we decided to simply remove those two columns. With the modified dataset, we did some plots to compare and learn more about the data, focusing particularly on people categories, and their domains.
 
