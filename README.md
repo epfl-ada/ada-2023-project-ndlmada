@@ -52,7 +52,7 @@ Some considerations need attention:
 #### Article <a name="article"></a>
 In this sub-section, we will analyze the distribution of the main subjects of an article using natural language processing (NLP) techniques, such as Latent Dirichlet Allocation (LDA). This step aims to determine whether the choice of link may be influenced by external factors and, thus, if it has an impact on the main research question.
 
-Finally, related to the [path analysis](#paths-analysis) section, we classify links into two types: social circle and theme. Themed links can be further differentiated into two sub-categories:
+Finally, related to the [paths analysis](#paths-analysis) section, we classify links into two types: social circle and theme. Themed links can be further differentiated into two sub-categories:
   - **Related Theme**: Articles implying that people are remembered for their achievements.
   - **Unrelated Theme**: Articles unrelated to the social circle or individual accomplishments.
 
