@@ -80,7 +80,7 @@ The different graph created to run the page rank and the way to create them are 
 | Week | Task | Assigned to |
 | --- | --- | --- |
 | **Week 10** | Paths graph connection | `Timo` |
-|  | Gender Determination | `Louise` |
+|  | Gender determination | `Louise` |
 |  | Links positions with statical tests | `Julie` |
 |  | Articles analysis | `Romane` `Emeric`|
 | **Week 11** | Paths graph connection | `Timo` |
@@ -91,7 +91,7 @@ The different graph created to run the page rank and the way to create them are 
 |  | Visual identity of the website | `Romane` |
 | **Week 13** | Finish Story details | `Everyone` |
 |  | Work on website | `TBD` | 
-|  | Create nice graphs | `TBD` |
+|  | Update graph visuals | `TBD` |
 |  | Re-write README | `Everyone` |
 | **Week 14** | Finish Website | `Everyone` |
 |  | Clean code | `Everyone` |
