@@ -76,5 +76,24 @@ The different graph created to run the page rank and the way to create them are 
 
 ## Timeline
 
-Friday 22nd december, 6pm, drink free mulled wine with agepoly on the esplanade :)
+
+| Week | Task | Assigned to |
+| --- | --- | --- |
+| **Week 10** | Paths graph connection | `Timo` |
+|  | Gender Determination | `Louise` |
+|  | Links positions with statical tests | `Julie` |
+|  | Articles analysis | `Romane` `Emeric`|
+| **Week 11** | Paths graph connection | `Timo` |
+|  | Merge connection graphs with results of articles analysis | `Everyone` |
+|  | Work on Homework 3 | `Everyone` |
+| **Week 12** | Finish data analysis and conclude | `Timo` `Louise` `Emeric` |
+|  | Beggin storytelling | `Julie` | 
+|  | Visual identity of the website | `Romane` |
+| **Week 13** | Finish Story details | `Everyone` |
+|  | Work on website | `TBD` | 
+|  | Create nice graphs | `TBD` |
+|  | Re-write README | `Everyone` |
+| **Week 14** | Finish Website | `Everyone` |
+|  | Clean code | `Everyone` |
+
 
