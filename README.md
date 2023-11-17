@@ -10,7 +10,7 @@ We will answer these questions by analyzing user paths, as well as the overall c
 
 ## Method
 ### Preprocessing
-We looked at the format and the content of the _wikispeedia paths-and-graph dataset_, revealing manageable sizes of datasets for our analysis. Missing values were only found in the finished path dataset (_hashedIpAddress_ and _rating_ columns). Our analysis won't use these so we removed them. With the modified dataset, we did some plots to compare the data, focusing particularly on people categories.
+We looked at the format and the content of the _wikispeedia paths-and-graph_ dataset, revealing manageable sizes of datasets for our analysis. Missing values were only found in the finished path dataset (_hashedIpAddress_ and _rating_ columns). Our analysis won't use these so we removed them. With the modified dataset, we did some plots to compare the data, focusing particularly on people categories.
 We took some time to examine the game and the links present on the pages. We identified links that were not countable in the game path. For instance, clicking on an image could lead to a page with other article links, but the game would stop tracking the following actions.
 
 ### Article connection graphs
