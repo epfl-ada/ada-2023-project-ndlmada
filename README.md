@@ -10,7 +10,7 @@ We will answer these questions by analyzing user paths, as well as the overall c
 
 ## Method
 ### Preprocessing
-We looked at the format and the content of the wikispeedia paths-and-graph dataset, revealing manageable sizes of datasets for our analysis. Missing values were only found in the finished path dataset (hashedIpAddress and rating columns). Our analysis won't use these so we removed them. With the modified dataset, we did some plots to compare the data, focusing particularly on people categories.
+We looked at the format and the content of the _wikispeedia paths-and-graph dataset_, revealing manageable sizes of datasets for our analysis. Missing values were only found in the finished path dataset (_hashedIpAddress_ and _rating_ columns). Our analysis won't use these so we removed them. With the modified dataset, we did some plots to compare the data, focusing particularly on people categories.
 We took some time to examine the game and the links present on the pages. We identified links that were not countable in the game path. For instance, clicking on an image could lead to a page with other article links, but the game would stop tracking the following actions.
 
 ### Article connection graphs
@@ -22,7 +22,7 @@ Are articles about people mostly visited coming from articles about people or ab
 We will use the global path connection graph to establish if articles about people are mostly linked to articles of people. Also, could this influence the player’s choice when navigating Wikispeedia ?
 
 ### Page Rank 
-To draw some conclusions about why people are famous, we can rank the wikipedia pages using different criterions and compare the obtained rankings. It is also possible that the difference between rankings show some gender differences between how celebrities are perceived by the public.
+To draw some conclusions about why people are famous, we can rank the Wikipedia pages using different criterions and compare the obtained rankings. It is also possible that the difference between rankings show some gender differences between how celebrities are perceived by the public.
 
 We can implement this fame ranking by using page rank. Indeed, we can create a graph by looking at the path players took and taking only edges that go from celebrities and what they did. By running page rank on this graph you get a ranking of the most importants celebrities calculated on what they did and how people remember it.
 
@@ -35,8 +35,8 @@ We want to analyze whether the position of a link in an article influences playe
 #### Articles
 We will analyze the distribution of the main subjects of an article using natural language processing to determine if the authors focused more on personal achievements or on the social circle.
 We will classify linked articles into two types: social circle and theme. Themed links can be further differentiated into two sub-categories:
-Related Themes: Articles implying that people are remembered for their achievements.
-Unrelated Themes: Articles unrelated to the social circle or individual accomplishments.
+- Related Themes: Articles implying that people are remembered for their achievements.
+- Unrelated Themes: Articles unrelated to the social circle or individual accomplishments.
 We want to achieve this distinction using a text analysis tool. We will compare queries (in this case, the article names linking to the target) with the plain text of the target article to assess term importance in articles and cosine similarity as a basis score for comparison.
 
 ### Identifying gender
@@ -66,6 +66,7 @@ To observe differences between men and women, we need to determine the gender of
 |  | Clean code | `Everyone` |
 
 ## References : 
-[https://www.wikidata.org/wiki/Wikidata:Main_Page]
+Wikispeedia : [https://snap.stanford.edu/data/wikispeedia.html]
+Wididata : [https://www.wikidata.org/wiki/Wikidata:Main_Page]
 
 
