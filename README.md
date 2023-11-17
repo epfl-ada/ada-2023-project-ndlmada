@@ -1,7 +1,7 @@
 # LookUp : Stars and why we know them
 
 ## Abstract
-Wikispeedia is a fun game where users get two articles, and have to go from the first to the second one by following links. By studying the paths chosen by players, we can capture their chain of thought and find out what key attributes about their goal they used to reach it. In this context, we are interested in people. Indeed, as humans, we know the names of thousands of famous people, whether it be for their music, their scientific discoveries or political impact. But is it really the case? We want to find out if our brain makes unconscious biases towards some celebrities by remembering them for the wrong reasons.
+[Wikispeedia](https://snap.stanford.edu/data/wikispeedia.html) is a fun game where users get two articles, and have to go from the first to the second one by following links. By studying the paths chosen by players, we can capture their chain of thought and find out what key attributes about their goal they used to reach it. In this context, we are interested in people. Indeed, as humans, we know the names of thousands of famous people, whether it be for their music, their scientific discoveries or political impact. But is it really the case? We want to find out if our brain makes unconscious biases towards some celebrities by remembering them for the wrong reasons.
 Because the first step towards reducing a bias is to acknowledge its existence, we want to determine if there is any in the user's choices, so we can consciously try to reduce ours.
 
 ## Research question
@@ -40,7 +40,7 @@ We will classify linked articles into two types: social circle and theme. Themed
 We want to achieve this distinction using a text analysis tool. We will compare queries (in this case, the article names linking to the target) with the plain text of the target article to assess term importance in articles and cosine similarity as a basis score for comparison.
 
 ### Identifying gender
-To observe differences between men and women, we need to determine the gender of people. However, in wikipedia, it isn't explicitly displayed. To do so we will take profit from Wikidata as it contains a gender category for pages about people. We will extract this information to obtain the required details for our more advanced analysis.
+To observe differences between men and women, we need to determine the gender of people. However, in Wikipedia, it isn't explicitly displayed. To do so we will take profit from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) as it contains a gender category for pages about people. We will extract this information to obtain the required details for our more advanced analysis.
 
 
 ## Timeline
@@ -66,7 +66,9 @@ To observe differences between men and women, we need to determine the gender of
 |  | Clean code | `Everyone` |
 
 ## References : 
-Wikispeedia : [https://snap.stanford.edu/data/wikispeedia.html]
-Wididata : [https://www.wikidata.org/wiki/Wikidata:Main_Page]
+
+[Wikispeedia](https://snap.stanford.edu/data/wikispeedia.html)
+
+[Wididata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
 
 
