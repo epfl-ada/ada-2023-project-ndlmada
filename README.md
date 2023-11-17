@@ -1,6 +1,3 @@
-# ada-2023-project-ndlmada
-ada-2023-project-ndlmada created by GitHub Classroom
-
 # LookUp : Stars and why we know them
 
 ## Abstract
