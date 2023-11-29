@@ -4,6 +4,7 @@ import os
 from urllib.parse import unquote
 import numpy as np
 from bs4 import BeautifulSoup # To Extract all the URLs from the HTML page
+from IPython.display import display
 
 
 def change_characters(dict_df, dataset_name, column_name):
@@ -106,3 +107,33 @@ def path_to_name(path):
     name = unquote(unquote(str(name)))
     
     return name
+
+def dataset_info(dictionary, dataset_name):
+    """ Display main information about a specified dataset from the given dictionary.
+    params:
+        dictionnary: dict
+            A dictionary of dataframes.
+        dataset_name: str 
+            The name of the dataframe to be accessed in the dictionary
+     """
+    # Print the dataset name we are working on
+    print('{}:'.format(dataset_name))
+
+    df = dictionary[dataset_name]
+    print('\tShape of the dataset: {}'.format(df.shape))
+    
+
+     # Check for NaN values in each column
+    columns_with_nan = df.columns[df.isna().any()].tolist()
+
+    # Print the columns with NaN values if they exsit
+    if columns_with_nan == []:
+        print('\tThe dataset has no column with NaN values.\n')
+    else:
+        print('\tThe dataset has {} columns with NaN values: {}\n'.format(len(columns_with_nan), columns_with_nan))
+    
+    # Provide statistical info 
+    print('Visualisation of the first column and statistical infos:')
+    display(df.head(1))
+    display(df.describe(include='all'))
+    df.info()
