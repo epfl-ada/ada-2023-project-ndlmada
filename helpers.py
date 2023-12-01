@@ -5,6 +5,7 @@ from urllib.parse import unquote
 import numpy as np
 from bs4 import BeautifulSoup # To Extract all the URLs from the HTML page
 from IPython.display import display
+import requests
 
 
 def change_characters(dict_df, dataset_name, column_name):
@@ -137,3 +138,39 @@ def dataset_info(dictionary, dataset_name):
     display(df.head(1))
     display(df.describe(include='all'))
     df.info()
+
+def get_gender_for_name(name):
+    url = f"https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&search={name}"
+
+    response = requests.get(url)
+    data = response.json()
+    print(name)
+
+    if data["search"]:
+        q_number = data["search"][0]["id"]
+
+        # Use the Q number to get gender information
+        gender_url = f"https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims&ids={q_number}"
+        gender_response = requests.get(gender_url)
+        gender_data = gender_response.json()
+
+        # Extract gender information
+        claims = gender_data["entities"][q_number]["claims"]
+        if "P21" in claims:
+            gender_id = claims["P21"][0]["mainsnak"]["datavalue"]["value"]["id"]
+            
+            # Male is Q6581097, Female is Q6581072
+            if gender_id == "Q6581097":
+                return "Male"
+            elif gender_id == "Q6581072":
+                return "Female"
+
+    return "Unknown"
+
+
+def add_all_genders(name_list):
+
+    # Iterate over the names and get genders
+    gender_list = [get_gender_for_name(name) for name in name_list]
+    return gender_list
+
