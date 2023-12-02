@@ -185,9 +185,9 @@ def replace_return(path_list):
     """
     count = 0
     result_path_list = []
+    history = [] # To add the right path when multiples > not in sequence
 
     l = len(path_list)
-
     for i in range(l):
 
         #Verify if the element of the list is an article or a return
@@ -195,10 +195,14 @@ def replace_return(path_list):
             #Take into account the case of a sequence of <
             while(( i + count < l) and (path_list[i + count] == '<')):
                 count += 1
-            result_path_list.append('.' + path_list[i-count-1]) 
+
+            corresponding_return = history[-(count+1)]
+            history = history[:-(count)]
+            result_path_list.append('.' + corresponding_return) 
         
         elif path_list[i] != '<':
             count = 0
             result_path_list.append(path_list[i])
+            history.append(path_list[i])
             
     return result_path_list
