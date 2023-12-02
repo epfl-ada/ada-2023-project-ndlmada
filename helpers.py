@@ -183,18 +183,22 @@ def replace_return(path_list):
     return: 
         the modified path_list that repace the returns by the corresponding articles with a prefix (.).
     """
-    print(type(path_list))
     count = 0
     result_path_list = []
 
     l = len(path_list)
 
     for i in range(l):
+
+        #Verify if the element of the list is an article or a return
         if (path_list[i] == '<') & (count == 0): 
+            #Take into account the case of a sequence of <
             while(( i + count < l) and (path_list[i + count] == '<')):
                 count += 1
             result_path_list.append('.' + path_list[i-count-1]) 
+        
         elif path_list[i] != '<':
             count = 0
             result_path_list.append(path_list[i])
+            
     return result_path_list
