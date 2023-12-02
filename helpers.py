@@ -69,7 +69,7 @@ def preprocessing():
 
 
 def extract_links(file_path):
-    """It extracts all the links there is in the provided article. 
+    """It extracts all the links there are in the provided article. 
     param:
         file_path: str
             path to the article we want to access.
@@ -174,3 +174,27 @@ def add_all_genders(name_list):
     gender_list = [get_gender_for_name(name) for name in name_list]
     return gender_list
 
+def replace_return(path_list):
+    """ In a given path, it replaces the return character (<) by the corresponding article name. 
+
+    parameter:
+        path_list: list of str
+            list of path from one article to another, where the '<' character represent a return. 
+    return: 
+        the modified path_list that repace the returns by the corresponding articles with a prefix (.).
+    """
+    print(type(path_list))
+    count = 0
+    result_path_list = []
+
+    l = len(path_list)
+
+    for i in range(l):
+        if (path_list[i] == '<') & (count == 0): 
+            while(( i + count < l) and (path_list[i + count] == '<')):
+                count += 1
+            result_path_list.append('.' + path_list[i-count-1]) 
+        elif path_list[i] != '<':
+            count = 0
+            result_path_list.append(path_list[i])
+    return result_path_list
