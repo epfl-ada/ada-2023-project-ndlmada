@@ -86,7 +86,7 @@ def extract_links(file_path):
         # Remove all the links that are not taken into account in the game (those that are not link to another article)
         filtered_links = [link for link in links if '/images/' not in link and 
                                                     'disclaimer.htm' not in link and 
-                                                    'index' not in link and 
+                                                    '/index/' not in link and 
                                                     '.htm' in link]
 
         return filtered_links 
