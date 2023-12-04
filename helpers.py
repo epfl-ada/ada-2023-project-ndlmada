@@ -144,7 +144,6 @@ def get_gender_for_name(name):
 
     response = requests.get(url)
     data = response.json()
-    print(name)
 
     if data["search"]:
         q_number = data["search"][0]["id"]
@@ -168,11 +167,15 @@ def get_gender_for_name(name):
     return "Unknown"
 
 
-def add_all_genders(name_list):
+def add_all_genders(dataframe):
 
     # Iterate over the names and get genders
+    #retrieve the names
+    name_list = list(dataframe['article'])
+    name_list = list(name.replace('_',' ') for name in name_list)
     gender_list = [get_gender_for_name(name) for name in name_list]
-    return gender_list
+    dataframe['gender'] = gender_list
+    return dataframe
 
 def replace_return(path_list):
     """ In a given path, it replaces the return character (<) by the corresponding article name. 
