@@ -65,6 +65,10 @@ def preprocessing():
     dfs = change_characters(dfs, 'links', 'linkSource')
     dfs = change_characters(dfs, 'links', 'linkTarget')
 
+    #Replace the returns (<) by the corresponding article the (sequence) of return leads to. The return article is higlighted by a . prefixe
+    dfs['paths_finished'].path = [';'.join(replace_return(list_)) for list_ in dfs['paths_finished'].path.str.split(';')]
+    dfs['paths_unfinished'].path = [';'.join(replace_return(list_)) for list_ in dfs['paths_unfinished'].path.str.split(';')]   
+
     return dfs
 
 
