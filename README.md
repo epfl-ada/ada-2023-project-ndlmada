@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # LookUp : Stars and why we know them
 
 ## Abstract
