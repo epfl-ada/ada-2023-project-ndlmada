@@ -510,6 +510,8 @@ def mean_median_change_in_rank_of_peoples(df_pagerank_before, df_pagerank_after,
     axes.set_xlabel("Difference of the rank")
     axes.set_ylabel("Number of nodes")
     axes.grid(True)
+    axes.text(100, 0.00075, 'Better ranked after', bbox = {'facecolor': 'oldlace', 'alpha': 0.5, 'boxstyle': "rarrow, pad=0.3", 'ec': 'green'})
+    axes.text(-100, 0.00075, 'Better ranked before', ha= "right", bbox = {'facecolor': 'oldlace', 'alpha': 0.5, 'boxstyle': "larrow, pad=0.3", 'ec': 'red'})
     plt.show()
 
     return df_diff_subset_people["Diff"].mean(), df_diff_subset_people["Diff"].median(), df_diff_subset_not_people["Diff"].mean(), df_diff_subset_not_people["Diff"].median()
