@@ -213,3 +213,37 @@ def replace_return(path_list):
             history.append(path_list[i])
             
     return result_path_list
+
+
+    # Function to create the dictionary from a TSV file
+def create_dictionary_from_tsv(file_path):
+    """  Creates a dictionary from a TSV file
+    parameter:
+        file_path: str
+            path to the TSV file
+    return:
+        all_article: list of str
+            name of each articles added as key
+        data_dict: dictionary
+            article name as key and 3 first subject as values
+    """
+    data_dict = {}
+
+    with open(file_path, 'r', newline='', encoding='utf-8') as tsvfile:
+        reader = csv.reader(tsvfile, delimiter='\t')
+        
+        all_articles = []
+        for row in reader:
+            if len(row) == 2:
+                article, subjects = row
+                subjects_list = subjects.split('.')
+                article = unquote(article)
+                all_articles.append(article)
+
+                data_dict[article] = {
+                    'main_subject': unquote(subjects_list[1]) if len(subjects_list) >= 2 else None,
+                    'secondary_subject': unquote(subjects_list[2]) if len(subjects_list) >= 3 else None,
+                    'tertiary_subject': unquote(subjects_list[3]) if len(subjects_list) >= 4 else None
+                }
+    
+    return data_dict, all_articles
