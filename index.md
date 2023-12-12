@@ -7,7 +7,7 @@ blablablablabla
 
 # test
 
-{% include test.html %}
+{% include docs/test.html %}
 
 [link](docs/test.html)
 
