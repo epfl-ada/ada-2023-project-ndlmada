@@ -7,8 +7,8 @@ blablablablabla
 
 # test
 
-{% include docs/test.html %}
+{% include test.html %}
 
-[link](docs/test.html)
+[link](test.html)
 
-[![TEST](test.html)](docs/test.html)
+[![TEST](test.html)](test.html)
