@@ -7,10 +7,11 @@ import random
 import math
 
 
-def iter_and_add_to_graph(G, df):
+def iter_and_add_to_graph(G, df, index_correction=0):
     for index, row in df.iterrows():
         path = row['path'].split(';')
-        for i in range(len(path)-1):
+
+        for i in range(len(path)-1-index_correction):
             if G.has_edge(path[i], path[i+1]):
                 G[path[i]][path[i+1]]['weight'] += 1
             else:
@@ -27,9 +28,11 @@ def create_graph_path(dfs):
     Returns:
         G (graph): graph of the paths
     """
+
     G = nx.DiGraph()
     G = iter_and_add_to_graph(G, dfs['paths_unfinished'])
-    G = iter_and_add_to_graph(G, dfs['paths_finished'])
+    # We put an index correction of 1 because we don't want to count the last article of the path since it is the target
+    G = iter_and_add_to_graph(G, dfs['paths_finished'], 1)
 
     return G
 
