@@ -7,5 +7,5 @@ blablablablabla
 
 # test
 
-[link](test.html)
-[![TEST](test.html)](test.html)
+[link](docs/test.html)
+[![TEST](test.html)](docs/test.html)
