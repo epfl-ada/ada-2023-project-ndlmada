@@ -10,4 +10,4 @@ blablablablabla
 
 [link](test.json)
 
-{{< plotly file="test" >}}
+{{< test >}}
