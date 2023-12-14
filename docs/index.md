@@ -10,5 +10,5 @@ blablablablabla
 
 [link](test.json)
 
-{{< plotly json="docs/test.json" height="700">}} 
+{{< plotly json="/docs/test.json" height="700">}} 
 
