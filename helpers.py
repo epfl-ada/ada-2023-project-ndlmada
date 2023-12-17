@@ -6,6 +6,7 @@ import numpy as np
 from bs4 import BeautifulSoup # To Extract all the URLs from the HTML page
 from IPython.display import display
 import requests
+import csv
 
 
 def change_characters(dict_df, dataset_name, column_name):
