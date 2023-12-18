@@ -8,8 +8,4 @@ blablablablabla
 # test
 
 
-````{=html}
-```{r, echo=FALSE, results='asis'}
-xfun::file_string('test.html')
-```
-````
+<iframe src="test.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
