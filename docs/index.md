@@ -10,4 +10,5 @@ blablablablabla
 
 [link](test.json)
 
-{{< test >}}
+
+![Alt text](test.json)
