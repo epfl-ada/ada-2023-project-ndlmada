@@ -8,7 +8,8 @@ blablablablabla
 # test
 
 
-[link](test.json)
-
-
-![Alt text](test.html)
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('test.html')
+```
+````
