@@ -11,4 +11,4 @@ blablablablabla
 [link](test.json)
 
 
-![Alt text](test.json)
+![Alt text](test.html)
