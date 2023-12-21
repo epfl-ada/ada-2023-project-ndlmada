@@ -278,3 +278,11 @@ def replace_to_simple(path):
     for i in range (len(path)):#-1) :
         new_path.append(path[i].split('.')[0])
     return new_path
+
+def create_dict_for_plotly_bar(new_path_dict):
+    #combines the data into a single dataframe to use with plotly
+    
+    N0_N1 = pd.merge(new_path_dict['N0'], new_path_dict['N1'], on = 'category', how = 'outer', suffixes = ('_N0', '_N1')).fillna(0)
+    N2_N3 = pd.merge(new_path_dict['N2'], new_path_dict['N3'], on = 'category', how = 'outer', suffixes = ('_N2', '_N3')).fillna(0)
+    final = pd.merge(N0_N1, N2_N3, on = 'category', how = 'outer').fillna(0)
+    return final
