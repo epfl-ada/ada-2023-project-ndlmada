@@ -33,6 +33,7 @@ However, we noticed something from those plots: the targets tend to be reached b
 
 A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as country and geography, as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article5.
 
+![Graphe](path_graph.png)
 
 Due to these two observations, we will focus on the three last links before reaching the target. In Fig.4, we can observe the behaviour of those reduced paths according to the category of their target. 
 
