@@ -1,3 +1,6 @@
 theme: jekyll-theme-cayman
 title : Look up, stars and how we see them
-banner : "_includes/banner.png"
+color:
+  header: "#000"
+  gradient_left: "#0acc65"
+  gradient_right: "#9904de"
