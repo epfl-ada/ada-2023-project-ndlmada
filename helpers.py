@@ -248,3 +248,41 @@ def create_dictionary_from_tsv(file_path):
                 }
     
     return data_dict, all_articles
+
+def get_dict_from_list(path_list):
+    # transform a dict with path list into a dictionary with the following items 
+        # the path list
+        # the path list but with only paths longer than one
+        # N0, N1, N2, N3, dataframe containing the number of articles in each category at time step N, N-1, N-2, N-3
+
+    N0 = pd.DataFrame({'category':[path[-1] for path in path_list if len(path)>0]}).value_counts().to_frame().reset_index()
+    N1 = pd.DataFrame({'category':[path[-2] for path in path_list if len(path)>1]}).value_counts().to_frame().reset_index()
+    N2 = pd.DataFrame({'category':[path[-3] for path in path_list if len(path)>2]}).value_counts().to_frame().reset_index()
+    N3 = pd.DataFrame({'category':[path[-4] for path in path_list if len(path)>3]}).value_counts().to_frame().reset_index()
+    long_paths = [path for path in path_list if len(path) > 1]
+
+    return {'list':path_list, 'long_path_list': long_paths, 'N0': N0, 'N1': N1, 'N2': N2, 'N3': N3}
+
+def update_dict_with_counts(path_dict):
+    # update a dict with path lists from each category with the counts at each step 
+
+    new_path_dict = {}
+    for cat in path_dict.keys():
+        new_path_dict[cat] = get_dict_from_list(path_dict[cat])
+    return new_path_dict
+
+def replace_to_simple(path):
+    # replace a path with complete categories to a path of principal categories
+
+    new_path = []
+    for i in range (len(path)):#-1) :
+        new_path.append(path[i].split('.')[0])
+    return new_path
+
+def create_dict_for_plotly_bar(new_path_dict):
+    #combines the data into a single dataframe to use with plotly
+    
+    N0_N1 = pd.merge(new_path_dict['N0'], new_path_dict['N1'], on = 'category', how = 'outer', suffixes = ('_N0', '_N1')).fillna(0)
+    N2_N3 = pd.merge(new_path_dict['N2'], new_path_dict['N3'], on = 'category', how = 'outer', suffixes = ('_N2', '_N3')).fillna(0)
+    final = pd.merge(N0_N1, N2_N3, on = 'category', how = 'outer').fillna(0)
+    return final
