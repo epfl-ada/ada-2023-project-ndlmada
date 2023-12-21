@@ -19,7 +19,6 @@ The category that interested us the most is the one about of people. To compare 
 
 <iframe src="overall_dataset_bar.html" width="1200px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
-Pie_main_cat_people.html
 ## Path representation & Game strategy: 
 We wanted to visualise the path leading to each people target to analyse their behaviour. Spoiler: the comparison of 631 distinct plots is not the most efficient way to look at our data. As obvious as it may seem, we, however, created a function to do the plot before realising that. In theory, we wanted to put the target node in evidence and all around it, each path, with the primary category colour for each node. In reality, it doesn’t look as nice as expected, for various reasons such as the presence of return in the paths or just because they are highly connected.
 
