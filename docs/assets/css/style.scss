@@ -10,7 +10,7 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-$header-heading-color: {{ site.color.header | default: "#fff" }} !default;
+$header-heading-color: {{ site.color.header | default: "#000" }} !default;
 $header-bg-color: {{ site.color.gradient_right | default: "#159957" }} !default;
 $header-bg-color-secondary: {{ site.color.gradient_left | default: "#155799" }} !default;
 
