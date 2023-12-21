@@ -17,7 +17,7 @@ To gain insights into how people are remembered, we studied the data and first s
 
 The category that interested us the most is the one about of people. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 15% of the articles are about people. Even so, this category still represents the third most prominent category as observed in Fig.2. However, not all articles are selected as targets. Within target articles the target group, around 12% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25% of the articles visited are people. The percentage of people articles visited is lower than those of non-people, but it is not surprising given the distribution of people/non-people articles. If we looked at the ratio of the categories distribution within the path divided by the categories distribution among the articles and compared for the people and non-people articles, we found two ratios quite similar. Thus according to the repartition of people pages and non-people pages, the 25% is not so low. 
 
-<iframe src="overall_dataset_bar.html" width="5000vw" frameborder="0" position="relative">Genre plot</iframe>
+<iframe src="overall_dataset_bar.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 
 ## Path representation & Game strategy: 
@@ -42,7 +42,8 @@ Due to these two observations, we will focus on the three last links before reac
 
 In Fig. 4a, except for a few target categories such as mathematics or music that are more restricted, it seems that most of the targets are reached from articles of various categories. For the people target, the last link comes from all categories. However, the people-to-people last link seems a bit thinner than other categories targeting people. A second visualisation (Fig. 4b), confirmed those observations. Indeed, for the non-people target, the previous path stays at most in the same categories, while for people it comes from different areas and only on fourth from people. This distinction between people and non-people may be related to the second sub-categories of the article. When non-people second subcategory remains in the same genre as the primary category, the second sub-category of people varies a lot. There are 20 sub-categories of people (Fig. 5). As we can observe, the biggest sub-categories (historical figures) can be also classified as history, the most represented number of articles of this category before the path end in people.  (MAYBE; A VERIFIER).
 
- 
+<iframe src="people_categories.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+
 
 ## Gender distribution in Wikispeedia
 From the previous observations, we tend to conclude that in this dataset the people are more reached by what they achieved than by their social circle. However, we didn’t stop there. Knowing that women are underrepresented in Wikipedia articles6 and that they tend to be more referred to the men in their surroundings than to their accomplishments, we wonder if this tendency can be also observed in this selection of Wikipedia articles and in the choice of the players.  
