@@ -1,8 +1,6 @@
-<iframe src="overall_dataset_bar.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 
 
-<iframe src="overall_categories_gender.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 
 
@@ -18,6 +16,9 @@ To answer our question, we used the data from the Wikispeedia Game3 developed by
 To gain insights into how people are remembered, we studied the data and first started by looking looked into the different article categories. Each category is a groupment of sub-categories. Fig.1 is the representation of the three first sub-categories. 
 
 The category that interested us the most is the one about of people. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 15% of the articles are about people. Even so, this category still represents the third most prominent category as observed in Fig.2. However, not all articles are selected as targets. Within target articles the target group, around 12% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25% of the articles visited are people. The percentage of people articles visited is lower than those of non-people, but it is not surprising given the distribution of people/non-people articles. If we looked at the ratio of the categories distribution within the path divided by the categories distribution among the articles and compared for the people and non-people articles, we found two ratios quite similar. Thus according to the repartition of people pages and non-people pages, the 25% is not so low. 
+
+<iframe src="overall_dataset_bar.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+
 
 ## Path representation & Game strategy: 
 We wanted to visualise the path leading to each people target to analyse their behaviour. Spoiler: the comparison of 631 distinct plots is not the most efficient way to look at our data. As obvious as it may seem, we, however, created a function to do the plot before realising that. In theory, we wanted to put the target node in evidence and all around it, each path, with the primary category colour for each node. In reality, it doesn’t look as nice as expected, for various reasons such as the presence of return in the paths or just because they are highly connected.
@@ -48,6 +49,8 @@ From the previous observations, we tend to conclude that in this dataset the peo
 First of all, we extract from Wikidataan external database the gender of people and then match them with our own dataset. As seen in Fig.???, We wanted to look at the data to see whether we have balanced data or not. And spoiler, it is not the case. As expected, the number of women is very low which provided us a really unbalanced dataset. The unknown data represents people like Pikachu for example, which are not really a people.
 				
 From the repartition among categories, we can see that the only group where there seems to have an equal repartition is for actors, models and celebrities. (MAYBE WE CAN LOOK AT THEM TO CONCLUDE SOMETHING ?)
+
+<iframe src="overall_categories_gender.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 
 
