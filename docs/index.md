@@ -73,7 +73,7 @@ First at all, as mentioned above, the Wikispeedia game is based on only a fracti
 Lastly, something we must not forget is that Wikispeedia is a game. As for all games, some strategies are made to reach the goal more efficiently, so it might be a huge influence on the choice made by the players. Hence, people within this article selection are not reached through their social circle. They tend to be more selected by the domained they are known for. Also (ADD SMALL CONCLUSION WITH THE GENDER BIAS)
 
 ### Bibliography
-[^1]: Dunbar’s number. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720](https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720)
+[^1]: Dunbar’s number. In: Wikipedia. ; 2023. Accessed December 18, 2023. [](https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720)
 [^2]: Jenkins R, Dowsett AJ, Burton AM. How many faces do people know? Proc R Soc B Biol Sci. 2018;285(1888):20181319. doi:10.1098/rspb.2018.1319
 [^3]: Wikispeedia. Accessed December 18, 2023. [Pie_main_cat_people.html](Pie_main_cat_people.html)
 [^4]: Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
