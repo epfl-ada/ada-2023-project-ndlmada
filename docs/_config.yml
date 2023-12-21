@@ -4,3 +4,4 @@ color:
   header: "#000"
   gradient_left: "#0acc65"
   gradient_right: "#9904de"
+color.section_title : "#2e0242"
