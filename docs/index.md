@@ -41,6 +41,7 @@ A common way to play Wikispeedia is to first reach a general concept with many o
 
 Due to these two observations, we will focus on the three last links before reaching the target. In Fig.4, we can observe the behaviour of those reduced paths according to the category of their target. 
 
+<iframe src="path_categories_dropdown.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 
 
