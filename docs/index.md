@@ -72,7 +72,7 @@ Lastly, something we must not forget is that Wikispeedia is a game. As for all g
 ### Bibliography
 1.	Dunbar’s number. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720](https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720)
 2.	Jenkins R, Dowsett AJ, Burton AM. How many faces do people know? Proc R Soc B Biol Sci. 2018;285(1888):20181319. doi:10.1098/rspb.2018.1319
-3.	Wikispeedia. Accessed December 18, 2023. https://dlab.epfl.ch/wikispeedia/play/
-4.	Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. http://dlab.epfl.ch/
+3.	Wikispeedia. Accessed December 18, 2023. [Pie_main_cat_people.html](Pie_main_cat_people.html)
+4.	Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
 5.	West R. Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts.
-6.	Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435
+6.	Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
