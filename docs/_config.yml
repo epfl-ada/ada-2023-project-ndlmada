@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 title : Look up, stars and how we see them
 color:
-  header: "#000"
+  header: "#fff"
   gradient_left: "#0acc65"
   gradient_right: "#9904de"
 color.section_title : "#2e0242"
