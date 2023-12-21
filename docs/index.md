@@ -17,7 +17,7 @@ To gain insights into how people are remembered, we studied the data and first s
 
 The category that interested us the most is the one about of people. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 15% of the articles are about people. Even so, this category still represents the third most prominent category as observed in Fig.2. However, not all articles are selected as targets. Within target articles the target group, around 12% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25% of the articles visited are people. The percentage of people articles visited is lower than those of non-people, but it is not surprising given the distribution of people/non-people articles. If we looked at the ratio of the categories distribution within the path divided by the categories distribution among the articles and compared for the people and non-people articles, we found two ratios quite similar. Thus according to the repartition of people pages and non-people pages, the 25% is not so low. 
 
-<iframe src="overall_dataset_bar.html" width="50vw" frameborder="0" position="relative">Genre plot</iframe>
+<iframe src="overall_dataset_bar.html" width="500vw" frameborder="0" position="relative">Genre plot</iframe>
 
 
 ## Path representation & Game strategy: 
