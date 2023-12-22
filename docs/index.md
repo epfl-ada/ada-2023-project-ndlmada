@@ -22,7 +22,7 @@ To gain insights into how people are remembered, we studied the data and first s
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic">Fig. 2 : Distribution of the first two subcategories.</p>
 
-The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People (Fig. 3). Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
+The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People (Fig. 3). This low proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative"></iframe>
@@ -206,7 +206,7 @@ By doing it for n from 1 to 7 and graphing the medians depending on n, we find t
 
 
 
-<iframe style="zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0;  -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;" src="line_rank.html" width="500px" height="430px" frameborder="0" position="relative">Genre plot</iframe>
+<iframe style="zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0;  -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;" src="line_rank.html" width="100%" height="100%" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Graph of the evolution of category’s median ranks through the players’ paths</p>
 
 The importance of the People category is even clearer than in the previous graph; we clearly see that the People category is more important at the beginning, middle, and end of paths taken by the players. And we can really affirm that People are more known by the general public for who they know than for what they do. 
