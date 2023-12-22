@@ -117,6 +117,7 @@ From the repartition among categories, we can see that the only group where ther
     <option value="path/Religion.png" >Religion</option>
     <option value="path/Science.png" >Science</option>
 </select>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 ## PageRank and gender
 
@@ -147,7 +148,6 @@ If we apply gender analysis to the page rank,
 </select>
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
-
 <script type="text/javascript"> function loadPlotRank() {
     var plotSelector = document.getElementById('plotSelectorRank');
     var plotFrame = document.getElementById('plotFrameRank');
@@ -155,14 +155,27 @@ If we apply gender analysis to the page rank,
     var selectedPlot = plotSelector.value;
     plotFrameRank.src = selectedPlot;
 }</script>
-<iframe  width="100%" height="530px"  id="plotFrameRank" frameborder="0" src="bar/path_bar_People.html"></iframe>
+
+<img  width="80%"  id="plotFrameRank" frameborder="0" src="path/Art.png">
 
 <label for="plotSelectorRank">Select a category to plot:</label>
 <select id="plotSelectorRank" onchange="loadPlotRank()">
-    <option value="rank_cat/path_bar_Art.html" >Art</option>
-
+    <option value="rank_cat/art.png" >Art</option>
+    <option value="rank_cat/business.png" >Business & Studies</option>
+    <option value="rank_cat/citizenhip.png" >Citizenship</option>
+    <option value="rank_cat/countries.png" >Countries</option>
+    <option value="rank_cat/design.png" >Design & Technology</option>
+    <option value="rank_cat/everyday.png" >Everyday Life</option>
+    <option value="rank_cat/geogra^hy.png" >Geography</option>
+    <option value="rank_cat/history.png" >History</option>
+    <option value="rank_cat/it.png" >IT</option>
+    <option value="rank_cat/language.png" >Language & Litterature</option>
+    <option value="rank_cat/mathematics.png" >Mathematics</option>
+    <option value="rank_cat/music.png" >Music</option>
+    <option value="rank_cat/people.png" >People</option>
+    <option value="rank_cat/religion.png" >Religion</option>
+    <option value="rank_cat/science.png" >Science</option>
 </select>
-
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
