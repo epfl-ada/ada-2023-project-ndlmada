@@ -275,7 +275,7 @@ In our article selection, the same tendency of women under representation as for
 
 As any good story starts, first we need the data. So let’s dig a little deeper and have a look at the repartition of men and women in our dataset (Fig.12). And the results hurt a lot, with a huge over-representation of men. While wikipedia still has some work to do on gender equality, that’s not the point here. Overall we have 689 people, with 87% of men and 9% of women, with men dominating all categories except ‘Actors, models and celebrities’. 
 
-A quick look at the starting articles from the paths gives the approximate same distribution, but a slightly slower percentage of women in the end articles (Fig 11). This can be explained by the fact that players are allowed to choose their final target.
+A quick look at the starting articles from the paths gives the approximate same distribution, but a slightly slower percentage of women in the end articles (Fig 12). This can be explained by the fact that players are allowed to choose their final target.
 
 
 
@@ -379,5 +379,5 @@ As a final word, bad news : you should rather not show this to girls around the 
 [^4]: E. D. S. Lab, ‘Data Science Lab’, dlab @ EPFL. Accessed: Dec. 18, 2023. [Online]. Available: [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
 [^5]: R. West, ‘Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts’.
 [^6]: ‘Wikipedia:WikiProject Women in Red’, Wikipedia. Dec. 14, 2023. Accessed: Dec. 18, 2023. [Online]. Available: [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
-[^7]: The godwin point has been reached.[https://en.wikipedia.org/wiki/Godwin%27s_law#:~:text=Godwin's%20law%2C%20short%20for%20Godwin's,Nazis%20or%20Hitler%20approaches%201.%22](Wikipedia - Godwin's law)
+[^7]: The godwin point has been reached.[Wikipedia - Godwin's law](https://en.wikipedia.org/wiki/Godwin%27s_law#:~:text=Godwin's%20law%2C%20short%20for%20Godwin's,Nazis%20or%20Hitler%20approaches%201.%22)
 
