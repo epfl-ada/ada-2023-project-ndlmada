@@ -118,14 +118,14 @@ This distinction between People and non-People may be related to their sub-categ
 
 
 <iframe src="people_categories.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 :</span> Distribution of people first subcategories</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 : Distribution of people first subcategories</p>
 Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same categories, even when those categories are less represented, such as Music, Religion, or Art (Fig. 1.b). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains the dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This suggests that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
  
 
 
 Can we find out People’s fame with our dataset? 
 
-We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler [7], then one would expect that most of the player's path's penultimate page will be WW2. But now let's imagine that:
+We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler [^7], then one would expect that most of the player's path's penultimate page will be WW2. But now let's imagine that:
  
 - 250 layers went from the “WW2” page to find him
 - 100 players went from the “Germany” page to find him
@@ -140,7 +140,7 @@ How can one resolve this problem and devise a kind of ranking for the pages?
 Use Pagerank ! 
 
 
-<img src="captain_obvious.jpg" width="50%" class="center">
+<img src="captain_obvious.jpg" width="50%" display="block" margin-left="auto" margin-right="auto">
 
 
 
