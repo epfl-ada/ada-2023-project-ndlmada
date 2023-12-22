@@ -16,7 +16,7 @@ To answer our question, we used data from the Wikispeedia Game [^3] developed by
 
 To gain insights into how people are remembered, we studied the data and first started by looking into the different article categories. Each category is a grouping of sub-categories. Fig.1 is the representation of the three first sub-categories. We will refer to the first nodes of the category path as categories and the second nodes as sub-categories.
 
-<img src="graph_1.png" width="100%">
+<img src="graph_1.png" width="80%">
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 1 : Visualisation of the first three subcategories of all articles </p>
 
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
@@ -327,7 +327,7 @@ With pagerank, we can avoid the target disparity problem and be more general wit
 To do so, we create two graphs, one containing the paths where the target nodes are women (we call it the women's paths network) and the other where the target nodes are men (the men's paths network). This creates distinct graphs; we can then find two independent rankings for those graphs and then look at the difference between the two rankings.
 Are people better ranked in the women's graph and therefore more important than in the men's graph? Or is it the opposite?
 
-We have done this, and these are the results (Fig. XXX). The graph is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
+We have done this, and these are the results (Fig. 15). The graph is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
 This graph shows the difference in ranking (and, therefore, importance) of the different pages between the women's paths network and the men's paths network.
  We can see in grey the difference in ranking of all the pages that are not about people; it makes a nice normal distribution. Some pages are more important than others, but the mean is pretty much 0.
  Next to this non-People mean, we have the mean of the differences in rank for the People pages. There is a slight augmentation in rank between the women's paths network and the men's paths network, but nothing significant.
