@@ -312,7 +312,7 @@ Yes, the categories are so unevenly distributed between men and women that this 
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category.</p>
 
 
 # Let's Page Rank these gender differences  
