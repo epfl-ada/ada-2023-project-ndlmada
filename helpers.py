@@ -330,3 +330,13 @@ def transform_path_main_category(path, dict_article_target):
                 split_cat.append(dict_article_target[art]['main_subject'])
     
     return split_cat
+
+
+def transform_path(categories,path):
+    split_path = path.split(';')
+    split_cat = []
+    for art in split_path:
+        if art != '<' : 
+            try: split_cat.append(categories.loc[categories['article'] == art, 'category'].iloc[0].replace('subject.', ''))
+            except IndexError : pass
+    return split_cat
