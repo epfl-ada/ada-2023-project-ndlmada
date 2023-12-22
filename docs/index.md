@@ -31,7 +31,7 @@ The category that interests us the most is the People one. To compare it with ot
 
 
 # How can we analyse such a dataset?
-A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as countries or topics related to geography (Fig.4), as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article5. 
+A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as countries or topics related to geography (Fig.4), as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article[^5]. 
 
 
 ![Graphe](path_graph.png)
@@ -205,7 +205,15 @@ Let’s do that for every path that has a People as a target. We take only the n
 By doing it for n from 1 to 7 and graphing the medians depending on n, we find the following graph. To understand this graph, you just have to remember two things: the smaller n is, the nearer you are reaching the target, and the more the normalised rank goes to 0, the more important you are, so the lower lines the more important the category is.
 
 
-
+#scaled-frame {
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+}
 <iframe src="line_rank.html" width="500px" height="430px" frameborder="0" scale="0.7" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Graph of the evolution of category’s median ranks through the players’ paths</p>
 
