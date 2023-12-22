@@ -90,7 +90,34 @@ From the repartition among categories, we can see that the only group where ther
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
+<script type="text/javascript"> function loadPlotPath() {
+    var plotSelector = document.getElementById('plotSelectorPath');
+    var plotFrame = document.getElementById('plotFramePath');
 
+    var selectedPlot = plotSelector.value;
+    plotFramePath.src = selectedPlot;
+}</script>
+<img  width="100%"  id="plotFrameRank" frameborder="0" src="path/Art.png"></img>
+
+<label for="plotSelectorPath">Select a category to plot:</label>
+<select id="plotSelectorPath" onchange="loadPlotPath()">
+    <option value="path/Art.png" >Art</option>
+    <option value="path/Business_Studies.png" >Business & Studies</option>
+    <option value="path/Citizenship.png" >Citizenship</option>
+    <option value="path/Countries.png" >Countries</option>
+    <option value="path/Design_and_Technology.png" >Design & Technology</option>
+    <option value="path/Everyday_life.png" >Everyday Life</option>
+    <option value="path/Geography.png" >Geography</option>
+    <option value="path/History.png" >History</option>
+    <option value="path/IT.png" >IT</option>
+    <option value="path/Language_and_literature.png" >Language & Litterature</option>
+    <option value="path/Mathematics.png" >Mathematics</option>
+    <option value="path/Music.png" >Music</option>
+    <option value="path/People.png" >People</option>
+    <option value="path/Religion.png" >Religion</option>
+    <option value="path/Science.png" >Science</option>
+
+</select>
 
 ## PageRank and gender
 
@@ -121,6 +148,23 @@ If we apply gender analysis to the page rank,
 </select>
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
+
+<script type="text/javascript"> function loadPlotRank() {
+    var plotSelector = document.getElementById('plotSelectorRank');
+    var plotFrame = document.getElementById('plotFrameRank');
+
+    var selectedPlot = plotSelector.value;
+    plotFrameRank.src = selectedPlot;
+}</script>
+<iframe  width="100%" height="530px"  id="plotFrameRank" frameborder="0" src="bar/path_bar_People.html"></iframe>
+
+<label for="plotSelectorRank">Select a category to plot:</label>
+<select id="plotSelectorRank" onchange="loadPlotRank()">
+    <option value="rank_cat/path_bar_Art.html" >Art</option>
+
+</select>
+
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 
