@@ -179,7 +179,7 @@ Let's not just look at the first place and look at the distribution of rank in e
     <option value="rank_cat/religion.png" >Religion</option>
     <option value="rank_cat/science.png" >Science</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 8 : Distribution of the rank of each category. This ranking was calculated using PageRank on all the paths that players took while trying to find a People page.</p>
 
 That's way more interesting! We can now say that the most important category in the paths that players took is the people category. That contradicts what we have found before, but is more to be expected when you think about how people would play the game.
 We could now say that the player tends to search for People by looking at other Peoples and therefore People are more known for who they know. 
@@ -203,7 +203,7 @@ By doing it for n from 1 to 7 and graphing the medians depending on n, we find t
 
 
 <iframe src="line_rank.html" width="150%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 9 : Graph of the evolution of category’s median ranks through the players’ paths</p>
 
 The importance of the People category is even clearer than in the previous graph; we clearly see that the People category is more important at the beginning, middle, and end of paths taken by the players. And we can really affirm that People are more known by the general public for who they know than for what they do. 
 
@@ -260,7 +260,7 @@ We also see that the Countries are really important in the Wikipedia architectur
     <option value="rank_cat2/religion.png" >Religion</option>
     <option value="rank_cat2/science.png" >Science</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Distribution of the rank of each category. This ranking was calculated using PageRank on the network created by the links in the pages (Exactly what PageRank was created to do: rank pages).</p>
 
 
 
@@ -276,12 +276,12 @@ A quick look at the starting articles from the paths gives the approximate same 
 
 
 <iframe src="pie_gender_start_finish.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 11 : Gender distribution in the paths, for the a) Start articles b) Target articles</p>
 
 
 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 12 : Distribution of people first subcategories by gender</p>
 
 
 Now let’s look at these bar plots a little more in detail. Firstly, between men and women, we notice that the ‘People’ arrives for both categories around the middle of the ranking, thus reinforcing that counts aren’t fool proof. However, we do notice that people count more for women than men. 
@@ -312,7 +312,7 @@ Yes, the categories are so unevenly distributed between men and women that this 
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa</p>
 
 
 # Let's Page Rank these gender differences  
@@ -347,6 +347,7 @@ What we get from this graph is that there is a strong imbalance and women tend t
 
 
 PAGERANKTIMOOOOOOOOOOOOOOO
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Difference of rank between the women's paths network and the men’s path network, a node that gained rank in the men’s path network compared with his ranking in the women’s path network would be on the right of the 0 </p>
 
 
 
