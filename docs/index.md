@@ -61,7 +61,7 @@ Due to these two observations, we will focus on the three last links before reac
     var plotSelector = document.getElementById('plotSelector');
     var plotFrame = document.getElementById('plotFrame');
 
-    var selectedPlot = plotSelector.value;
+    var selectedPlot = plotSelector.src;
     plotFrame.src = selectedPlot;
 }</script>
 
