@@ -271,11 +271,11 @@ We also see that the Countries are really important in the Wikipedia architectur
 # Is this fact true for both men and women?
 
 
-In our article selection, the same tendency of women under representation as for the whole Wikipedia database is observed: the number of women is very low, which provides us with a really unbalanced dataset (Fig. 8). Notice that in the People selection, there are some unknown gender labels as groups of people, such as the Grimm brothers, or some ungendered characters, such as Pikachu.
+In our article selection, the same tendency of women under representation as for the whole Wikipedia database is observed: the number of women is very low, which provides us with a really unbalanced dataset (Fig. 12). Notice that in the People selection, there are some unknown gender labels as groups of people, such as the Grimm brothers, or some ungendered characters, such as Pikachu.
 
-As any good story starts, first we need the data. So let’s dig a little deeper and have a look at the repartition of men and women in our dataset (Fig.10). And the results hurt a lot, with a huge over-representation of men. While wikipedia still has some work to do on gender equality, that’s not the point here. Overall we have 689 people, with 87% of men and 9% of women, with men dominating all categories except ‘Actors, models and celebrities’. 
+As any good story starts, first we need the data. So let’s dig a little deeper and have a look at the repartition of men and women in our dataset (Fig.12). And the results hurt a lot, with a huge over-representation of men. While wikipedia still has some work to do on gender equality, that’s not the point here. Overall we have 689 people, with 87% of men and 9% of women, with men dominating all categories except ‘Actors, models and celebrities’. 
 
-A quick look at the starting articles from the paths gives the approximate same distribution, but a slightly slower percentage of women in the end articles (Fig 9). This can be explained by the fact that players are allowed to choose their final target.
+A quick look at the starting articles from the paths gives the approximate same distribution, but a slightly slower percentage of women in the end articles (Fig 11). This can be explained by the fact that players are allowed to choose their final target.
 
 
 
@@ -287,8 +287,7 @@ A quick look at the starting articles from the paths gives the approximate same 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : Distribution of people first subcategories by gender</p>
 
-
-Now let’s look at these bar plots a little more in detail. Firstly, between men and women, we notice that the ‘People’ arrives for both categories around the middle of the ranking, thus reinforcing that counts aren’t fool proof. However, we do notice that people count more for women than men. 
+Now let’s look at these path bar plots we saw earlier a little more in detail (Fig 13). Firstly, between men and women, we notice that the ‘People’ arrives for both categories around the middle of the ranking, thus reinforcing that counts aren’t fool proof. However, we do notice that people count more for women than men. 
 
 If we saw you reading this right now, we would expect you to look like this : 
 
@@ -316,7 +315,7 @@ Yes, the categories are so unevenly distributed between men and women that this 
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category</p>
 
 
 # Let's Page Rank these gender differences  
