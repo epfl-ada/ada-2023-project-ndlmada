@@ -46,6 +46,7 @@ Due to these two observations, we will focus on the three last links before reac
 <iframe src="bar/path_bar_Art.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 
+<script src="{{ site.baseurl }}/toggle.js"></script>
 
 <label for="plotSelector">Select a category to plot:</label>
 <select id="plotSelector" onchange="loadPlot()">
@@ -55,7 +56,6 @@ Due to these two observations, we will focus on the three last links before reac
     <!-- Add more options as needed -->
 </select>
 <iframe id="plotFrame" width="100%" height="400px" frameborder="0" src=plotSelector.value></iframe>
-<script src="{{ site.baseurl }}/toggle.js"></script>
 
 
 
