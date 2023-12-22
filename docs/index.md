@@ -118,14 +118,14 @@ This distinction between People and non-People may be related to their sub-categ
 
 
 <iframe src="people_categories.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 :</span> Distribution of people first subcategories</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 : Distribution of people first subcategories</p>
 Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same categories, even when those categories are less represented, such as Music, Religion, or Art (Fig. 1.b). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains the dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This suggests that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
  
 
 
-Can we find out People’s fame with our dataset? 
+# Can we find out People’s fame with our dataset? 
 
-We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler [7], then one would expect that most of the player's path's penultimate page will be WW2. But now let's imagine that:
+We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler [^7], then one would expect that most of the player's path's penultimate page will be WW2. But now let's imagine that:
  
 - 250 layers went from the “WW2” page to find him
 - 100 players went from the “Germany” page to find him
@@ -140,9 +140,118 @@ How can one resolve this problem and devise a kind of ranking for the pages?
 Use Pagerank ! 
 
 
-<img src="captain_obvious.jpg" width="50%" class="center">
+<img src="captain_obvious.jpg" width="50%" display="block" margin-left="auto" margin-right="auto">
+
+The idea of PageRank is that the most important node in a directed graph is the node that is pointed to by the most “important” nodes. 
+So, by taking all the paths that players took while trying to find a People page, putting them into a graph, and then running the pagerank algorithm on this graph, you get the most important node in the players' paths, which is... the United States!
+ 
+Ok, that's cool, but it doesn’t tell us much about our research question.
+ 
+Let's not just look at the first place and look at the distribution of rank in each category.
+
+<script type="text/javascript"> function loadPlotRank() {
+    var plotSelector = document.getElementById('plotSelectorRank');
+    var plotFrame = document.getElementById('plotFrameRank');
+
+    var selectedPlot = plotSelector.value;
+    plotFrameRank.src = selectedPlot;
+}</script>
+
+<img  width="80%"  id="plotFrameRank" frameborder="0" src="rank_cat/people.png">
+
+<label for="plotSelectorRank">Select a category to plot:</label>
+<select id="plotSelectorRank" onchange="loadPlotRank()">
+    <option value="rank_cat/art.png" >Art</option>
+    <option value="rank_cat/business.png" >Business & Studies</option>
+    <option value="rank_cat/citizenship.png" >Citizenship</option>
+    <option value="rank_cat/countries.png" >Countries</option>
+    <option value="rank_cat/design.png" >Design & Technology</option>
+    <option value="rank_cat/everyday.png" >Everyday Life</option>
+    <option value="rank_cat/geography.png" >Geography</option>
+    <option value="rank_cat/history.png" >History</option>
+    <option value="rank_cat/it.png" >IT</option>
+    <option value="rank_cat/language.png" >Language & Litterature</option>
+    <option value="rank_cat/mathematics.png" >Mathematics</option>
+    <option value="rank_cat/music.png" >Music</option>
+    <option value="rank_cat/people.png" >People</option>
+    <option value="rank_cat/religion.png" >Religion</option>
+    <option value="rank_cat/science.png" >Science</option>
+</select>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+
+That's way more interesting! We can now say that the most important category in the paths that players took is the people category. That contradicts what we have found before, but is more to be expected when you think about how people would play the game.
+We could now say that the player tends to search for People by looking at other Peoples and therefore People are more known for who they know. 
+ 
+But that would be a bit too easy, and we want to deepen the analysis a bit. The rest of the categories seem very similar, with the mean being pretty much in the middle of the ranks.
+But maybe this importance rank changes as we approach the target nodes?
+Indeed, we see in Fig.XXX that the distribution of the categories of the starting nodes is not uniform at all, with History and Geography being way more represented. This could induce a bias, as by starting with a country, one might stick with countries for 2-3 jumps before jumping into a new category, and therefore the importance of countries is artificially high in the beginning of the paths but dies down as we approach the target.
 
 
+So let's now compute the pagerank on the graph where only the target - n paths are added. 
+For example, if n = 2 and we have the path “Computer → Jesus → Pikachu → France → Gay Pride,” with Gay Pride being the target, then the path taken and added to the graph would be “Jesus → Pikachu → France."
+If n = 1, the path added would be “Pikachu → France."
+Note that we never add the path “France → Gay Pride“ as we don’t want to deal with the disparity of the targets, and the targets will all be people, and this would totally ruin our analysis.
+Let’s do that for every path that has a People as a target. We take only the n jumps preceding the target, graph them, rank them using pagerank, and take the median of the rank of each category. This gives us a way to compare each category and see which one is more important before arriving at the target.
+By doing it for n from 1 to 7 and graphing the medians depending on n, we find the following graph. To understand this graph, you just have to remember two things: the smaller n is, the nearer you are reaching the target, and the more the normalised rank goes to 0, the more you are important, so lower lines are more important.
+
+
+
+<iframe src="line_rank.html" width="200%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+
+The importance of the People category is even clearer than in the previous graph; we clearly see that the People category is more important at the beginning, middle, and end of paths taken by the players. And we can really affirm that People are more known by the general public for who they know than for what they do. 
+
+We also see the dip in importance of the Art category between the n-3 jump and the final jump; we don’t know how to explain that, and further analysis would be needed.
+
+Finally, we also remark that the Country category is way less important in this analysis than in our counting analysis. Maybe it is because there are a lot of different countries, and if a celebrity or historical figure did significant things in multiple countries, then they can be reached from multiple countries' Wikipedia pages. This dilutes the paths to countries, and countries are less important in the pagerank. In a way this shows the caveat of this analysis, we will explain it with an example: We take the same example with Hitler but this time:
+
+- 150 players went from the “Germany” page to find him
+- 100 players went from the “War” page to find him
+- 100 players went from the “Nazi” page to find him  
+- 50 players went from the “WW2” page to find him
+- 50 players went from the “Invasion” page to find him
+
+
+
+Is Hitler here really known for WW2 or for his links with Germany? His pagerank will tell us he is known for his link with Germany…
+ (Note: For simplicity, we omit the fact that page rank would also take into account the number and importance of the nodes pointing to Germany, War..)
+This caveat could then explain the difference between the counting and pagerank analyses.
+ It is important to see that this pagerank analysis doesn’t completely cancel the counting analysis done beforehand, but it comes as a complement.
+The counting analysis states that people are in general known by what they did, and it shows the disparity of knowledge among the players. One could argue that if all the players came together, they would be able to state everything that a person did, and it shows in a way that the population never forgets.
+The pagerank analysis, on the other hand, states that a large portion of the players know most of the targets based on who they interacted with. Yes, the targets did a lot of things, but it is easier to both remember and find the person related to the target than what they achieved. Most of the players even went through the same People page to find their common target, which shows how important this People is in the path. 
+We also see that the Countries are really important in the Wikipedia architecture as they are related to most of the pages and have by far the biggest pagerank (see Fig. below), but in the paths they are not important. This consolidates the fact that the People category is important because, even with Countries being very present (and so a lot of occasions for the players to find their target via the Countries), the People category came in at the top. 
+
+
+
+<script type="text/javascript"> function loadPlotRank2() {
+    var plotSelector = document.getElementById('plotSelectorRank2');
+    var plotFrame = document.getElementById('plotFrameRank2');
+
+    var selectedPlot = plotSelector.value;
+    plotFrameRank2.src = selectedPlot;
+}</script>
+
+<img  width="80%"  id="plotFrameRank2" frameborder="0" src="rank_cat2/people.png">
+
+<label for="plotSelectorRank2">Select a category to plot:</label>
+<select id="plotSelectorRank2" onchange="loadPlotRank()">
+    <option value="rank_cat2/art.png" >Art</option>
+    <option value="rank_cat2/business.png" >Business & Studies</option>
+    <option value="rank_cat2/citizenship.png" >Citizenship</option>
+    <option value="rank_cat2/countries.png" >Countries</option>
+    <option value="rank_cat2/design.png" >Design & Technology</option>
+    <option value="rank_cat2/everyday.png" >Everyday Life</option>
+    <option value="rank_cat2/geography.png" >Geography</option>
+    <option value="rank_cat2/history.png" >History</option>
+    <option value="rank_cat2/it.png" >IT</option>
+    <option value="rank_cat2/language.png" >Language & Litterature</option>
+    <option value="rank_cat2/mathematics.png" >Mathematics</option>
+    <option value="rank_cat2/music.png" >Music</option>
+    <option value="rank_cat2/people.png" >People</option>
+    <option value="rank_cat2/religion.png" >Religion</option>
+    <option value="rank_cat2/science.png" >Science</option>
+</select>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 
@@ -172,35 +281,7 @@ Use Pagerank !
 </select>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
-<script type="text/javascript"> function loadPlotRank() {
-    var plotSelector = document.getElementById('plotSelectorRank');
-    var plotFrame = document.getElementById('plotFrameRank');
 
-    var selectedPlot = plotSelector.value;
-    plotFrameRank.src = selectedPlot;
-}</script>
-
-<img  width="80%"  id="plotFrameRank" frameborder="0" src="path/Art.png">
-
-<label for="plotSelectorRank">Select a category to plot:</label>
-<select id="plotSelectorRank" onchange="loadPlotRank()">
-    <option value="rank_cat/art.png" >Art</option>
-    <option value="rank_cat/business.png" >Business & Studies</option>
-    <option value="rank_cat/citizenhip.png" >Citizenship</option>
-    <option value="rank_cat/countries.png" >Countries</option>
-    <option value="rank_cat/design.png" >Design & Technology</option>
-    <option value="rank_cat/everyday.png" >Everyday Life</option>
-    <option value="rank_cat/geogra^hy.png" >Geography</option>
-    <option value="rank_cat/history.png" >History</option>
-    <option value="rank_cat/it.png" >IT</option>
-    <option value="rank_cat/language.png" >Language & Litterature</option>
-    <option value="rank_cat/mathematics.png" >Mathematics</option>
-    <option value="rank_cat/music.png" >Music</option>
-    <option value="rank_cat/people.png" >People</option>
-    <option value="rank_cat/religion.png" >Religion</option>
-    <option value="rank_cat/science.png" >Science</option>
-</select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 ### References
