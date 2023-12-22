@@ -1,6 +1,8 @@
 
 # LookUp : Stars and why we know them
 
+Link to our website : https://epfl-ada.github.io/ada-2023-project-ndlmada/#fnref:2 
+
 ## Abstract
 [Wikispeedia](https://snap.stanford.edu/data/wikispeedia.html) is a fun game where users get two articles, and have to go from the first to the second one by following links. By studying the paths chosen by players, we can capture their chain of thought and find out what key attributes about their goal they used to reach it. In this context, we are interested in people. Indeed, as humans, we know the names of thousands of famous people, whether it be for their music, their scientific discoveries or political impact. But is it really the case? We want to find out if our brain makes unconscious biases towards some celebrities by remembering them for the wrong reasons.
 Because the first step towards reducing a bias is to acknowledge its existence, we want to determine if there is any in the user's choices, so we can consciously try to reduce ours.
@@ -65,6 +67,18 @@ To observe differences between men and women, we need to determine the gender of
 |  | Re-write README | `Everyone` |
 | **Week 14** | Finish Website | `Everyone` |
 |  | Clean code | `Everyone` |
+
+
+## Contribution
+ 
+| Team member | Contribution |
+| --- | --- |
+| `Timo` | PageRank, Preliminary research, Storytelling, Data exploration |
+| `Romane` | Related subject analysis, Storytelling, Code annotation |
+| `Louise` | Paths analysis, Storytelling, Data exploration |
+| `Julie` | Data Story, Link position analysis, Pre-processing |
+| `Emeric` | Website, Related subject analysis, Preliminary research |
+
 
 ## Structure 
 
