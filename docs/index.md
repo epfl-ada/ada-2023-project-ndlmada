@@ -22,7 +22,7 @@ To gain insights into how people are remembered, we studied the data and first s
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic">Fig. 2 : Distribution of the first two subcategories.</p>
 
-The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
+The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People (Fig. 3). Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative"></iframe>
@@ -37,7 +37,7 @@ A common way to play Wikispeedia is to first reach a general concept with many o
 ![Graphe](path_graph.png)
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 4 : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
 
-Due to these two observations, we will focus on the last three links before reaching the target. In Fig.5, we can observe the behaviour of those reduced paths according to the category of their target.
+Due to these two observations, we will focus on the last three links before reaching the target. 
 
 
 
@@ -78,7 +78,7 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
 
 
 # What about the People?
-For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, while People only come in fourth. (Fig. 6).
+For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, with People coming only in fourth. (Fig. 6).
 
 
 
@@ -135,7 +135,7 @@ We did a lot of counting, but a count isn't perfect to really affirm a global tr
 - 50 players went from the “Poland” page to find it
 - 50 players went from the “France” page to find it
  
-If you now count the different categories, you will find that 250 pages have the category history and 300 pages have the category Country. The truth is that he is most known for what he did and not for where he came from. 
+If you now count the different categories, you will find that 250 pages have the category History and 300 pages have the category Country which would mislead us into believing he is famous for where he came from. When the truth actually is that he is most known for what he did and not for where he came from.
  
 How can one resolve this problem and devise a kind of ranking for the pages?
  
