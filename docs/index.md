@@ -376,4 +376,4 @@ Regarding gender bias, we can first enlighten that the only category where parit
 [^4]: Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
 [^5]: West R. Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts.
 [^6]: Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
-[^7]: The godwin point has been reached.
+[^7]: The godwin point has been reached.[https://en.wikipedia.org/wiki/Godwin%27s_law#:~:text=Godwin's%20law%2C%20short%20for%20Godwin's,Nazis%20or%20Hitler%20approaches%201.%22](Wikipedia - Godwin's law)
