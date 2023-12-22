@@ -40,7 +40,7 @@ Due to these two observations, we will focus on the three last links before reac
 
 
 
-<div class="box">
+<div float="left" margin-right="20px">
 	
 <script type="text/javascript"> function loadPlot() {
     var plotSelector = document.getElementById('plotSelector');
