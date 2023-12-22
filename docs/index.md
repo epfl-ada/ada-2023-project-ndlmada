@@ -206,7 +206,7 @@ By doing it for n from 1 to 7 and graphing the medians depending on n, we find t
 
 
 
-<iframe style="zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0;  -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;" src="line_rank.html" width="200%" height="700px" frameborder="0" position="relative">Genre plot</iframe>
+<iframe style="zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0;  -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;" src="line_rank.html" width="200%" height="1000px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Graph of the evolution of category’s median ranks through the players’ paths</p>
 
 The importance of the People category is even clearer than in the previous graph; we clearly see that the People category is more important at the beginning, middle, and end of paths taken by the players. And we can really affirm that People are more known by the general public for who they know than for what they do. 
