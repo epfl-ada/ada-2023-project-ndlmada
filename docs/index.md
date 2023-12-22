@@ -17,10 +17,10 @@ To answer our question, we used data from the Wikispeedia Game3 developed by the
 To gain insights into how people are remembered, we studied the data and first started by looking into the different article categories. Each category is a grouping of sub-categories. Fig.1.a is the representation of the three first sub-categories. We will refer to the first nodes of the category path as categories and the second nodes as sub-categories.
 
 <img src="graph_1.png" width="100%">
-<p style="text-align: center;font-size: 0.8em;"> [Fig. 1] : Visualisation of the first three subcategories of all articles </p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> [Fig. 1] : Visualisation of the first three subcategories of all articles </p>
 
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
-<p style="text-align: center;font-size: 0.8em;" font-style="italic">[Fig. 2] : Distribution of the first two subcategories.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic">[Fig. 2] : Distribution of the first two subcategories.</p>
 
 The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
@@ -35,7 +35,7 @@ A common way to play Wikispeedia is to first reach a general concept with many o
 
 
 ![Graphe](path_graph.png)
-<p style="text-align: center;font-size: 0.8em;"> style="color :blue"> Fig. 4 : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> [Fig. 4] : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
 
 Due to these two observations, we will focus on the last three links before reaching the target. In Fig.5, we can observe the behaviour of those reduced paths according to the category of their target.
 
@@ -75,14 +75,14 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
     <option value="bar/path_bar_Science.html">Science</option>
 </select>
 
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 5 : The categories of the last three articles visited, grouped by target categories. Each line corresponds to a path, and its colour corresponds to the category visited by the path in N-1 a) People target: within the last links, all the categories are more or less used to reach the target.  b) History target: mainly comes from History articles or often closely related subjects such as Countries, Geography, People and Religion. c) Science target: almost all of the paths come from Science-related subjects.  d) Mathematics target: almost all of the paths come from Mathematics-related subjects.</p>
 
 
 <iframe src="people_categories.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 	
 <script type="text/javascript"> function loadPlotPath() {
     var plotSelector = document.getElementById('plotSelectorPath');
@@ -112,7 +112,7 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
     <option value="path/Religion.png" >Religion</option>
     <option value="path/Science.png" >Science</option>
 </select>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 
@@ -134,7 +134,7 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 <script type="text/javascript"> function loadPlotRank() {
     var plotSelector = document.getElementById('plotSelectorRank');
@@ -164,7 +164,7 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
     <option value="rank_cat/religion.png" >Religion</option>
     <option value="rank_cat/science.png" >Science</option>
 </select>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 ### References
