@@ -109,15 +109,15 @@ If we apply gender analysis to the page rank,
     var selectedPlot = plotSelector.value;
     plotFrameGender.src = selectedPlot;
 }</script>
-<iframe  id="plotFrameGender" width="100%" height="530px" frameborder="0" src="bar/path_bar_Art.html"></iframe>
+<iframe  id="plotFrameGender" width="100%" height="530px" frameborder="0" src="bar/path_bar_women.html"></iframe>
 
 <label for="plotSelectorGender">Select a category to plot:</label>
 <select id="plotSelectorGender" onchange="loadPlotGender()">
+    <option value="bar/path_bar_women.html">Women</option>
+    <option value="bar/path_bar_men.html">Men</option>
     <option value="bar/path_bar_actors, models and celebrities.html" >Actors, Models and celebrities (both genders)</option>
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
-    <option value="bar/path_bar_men.html">Men</option>
-    <option value="bar/path_bar_women.html">Women</option>
 </select>
 
 
