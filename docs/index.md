@@ -234,7 +234,7 @@ We also see that the Countries are really important in the Wikipedia architectur
 <img  width="80%"  id="plotFrameRank2" frameborder="0" src="rank_cat2/people.png">
 
 <label for="plotSelectorRank2">Select a category to plot:</label>
-<select id="plotSelectorRank2" onchange="loadPlotRank()">
+<select id="plotSelectorRank2" onchange="loadPlotRank2()">
     <option value="rank_cat2/art.png" >Art</option>
     <option value="rank_cat2/business.png" >Business & Studies</option>
     <option value="rank_cat2/citizenship.png" >Citizenship</option>
