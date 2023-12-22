@@ -17,16 +17,16 @@ To answer our question, we used data from the Wikispeedia Game3 developed by the
 To gain insights into how people are remembered, we studied the data and first started by looking into the different article categories. Each category is a grouping of sub-categories. Fig.1.a is the representation of the three first sub-categories. We will refer to the first nodes of the category path as categories and the second nodes as sub-categories.
 
 <img src="graph_1.png" width="100%">
-<p style="text-align: center;font-size: 0.8em;"><span color="blue" font-style="italic"> Fig. 1 :</span> Visualisation of the first three subcategories of all articles </p>
+<p style="text-align: center;font-size: 0.8em;"><span color="blue" font-style="italic"> [Fig. 1] :</span> Visualisation of the first three subcategories of all articles </p>
 
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" >enre plot</iframe>
 <p style="text-align: center;font-size: 0.8em;" font-style="italic"><span color="blue" > [Fig. 2] :</span> Distribution of the first two subcategories.</p>
 
-The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category ([Fig. 2]). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
+The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category [Fig. 2]. However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative">enre plot</iframe>
-<span style="color :blue font-style="italic"> Fig. 1 :</span> Distribution of the categories. Each article has a path of sub-categories. a) Visualisation of the first three subcategories of all articles b) Distribution of the first two subcategories.</p>
+<span style="color :blue font-style="italic"> Fig. 3 :</span> People and non-People distribution, from left to right, within all articles, within all the paths, and within all the paths leading to a People target</p>
 
 
 ![Graphe](path_graph.png)
