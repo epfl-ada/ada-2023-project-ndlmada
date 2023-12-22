@@ -22,7 +22,7 @@ To gain insights into how people are remembered, we studied the data and first s
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic">Fig. 2 : Distribution of the first two subcategories.</p>
 
-The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
+The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People (Fig. 3). This low proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative"></iframe>
@@ -31,13 +31,13 @@ The category that interests us the most is the People one. To compare it with ot
 
 
 # How can we analyse such a dataset?
-A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as countries or topics related to geography (Fig.4), as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article5. 
+A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as countries or topics related to geography (Fig.4), as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article[^5]. 
 
 
 ![Graphe](path_graph.png)
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 4 : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
 
-Due to these two observations, we will focus on the last three links before reaching the target. In Fig.5, we can observe the behaviour of those reduced paths according to the category of their target.
+Due to these two observations, we will focus on the last three links before reaching the target. 
 
 
 
@@ -78,7 +78,7 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
 
 
 # What about the People?
-For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, while People only come in fourth. (Fig. 6).
+For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, with People coming only in fourth. (Fig. 6).
 
 
 
@@ -135,7 +135,7 @@ We did a lot of counting, but a count isn't perfect to really affirm a global tr
 - 50 players went from the “Poland” page to find it
 - 50 players went from the “France” page to find it
  
-If you now count the different categories, you will find that 250 pages have the category history and 300 pages have the category Country. The truth is that he is most known for what he did and not for where he came from. 
+If you now count the different categories, you will find that 250 pages have the category History and 300 pages have the category Country which would mislead us into believing he is famous for where he came from. When the truth actually is that he is most known for what he did and not for where he came from.
  
 How can one resolve this problem and devise a kind of ranking for the pages?
  
@@ -206,7 +206,7 @@ By doing it for n from 1 to 7 and graphing the medians depending on n, we find t
 
 
 
-<iframe src="line_rank.html" width="100%" height="430px" frameborder="0" position="relative">Genre plot</iframe>
+<iframe style="zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0; -o-transform: scale(0.75); -o-transform-origin: 0 0;  -webkit-transform: scale(0.75); -webkit-transform-origin: 0 0;" src="line_rank.html" width="200%" height="700px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Graph of the evolution of category’s median ranks through the players’ paths</p>
 
 The importance of the People category is even clearer than in the previous graph; we clearly see that the People category is more important at the beginning, middle, and end of paths taken by the players. And we can really affirm that People are more known by the general public for who they know than for what they do. 
@@ -271,11 +271,11 @@ We also see that the Countries are really important in the Wikipedia architectur
 # Is this fact true for both men and women?
 
 
-In our article selection, the same tendency of women under representation as for the whole Wikipedia database is observed: the number of women is very low, which provides us with a really unbalanced dataset (Fig. 8). Notice that in the People selection, there are some unknown gender labels as groups of people, such as the Grimm brothers, or some ungendered characters, such as Pikachu.
+In our article selection, the same tendency of women under representation as for the whole Wikipedia database is observed: the number of women is very low, which provides us with a really unbalanced dataset (Fig. 12). Notice that in the People selection, there are some unknown gender labels as groups of people, such as the Grimm brothers, or some ungendered characters, such as Pikachu.
 
-As any good story starts, first we need the data. So let’s dig a little deeper and have a look at the repartition of men and women in our dataset (Fig.10). And the results hurt a lot, with a huge over-representation of men. While wikipedia still has some work to do on gender equality, that’s not the point here. Overall we have 689 people, with 87% of men and 9% of women, with men dominating all categories except ‘Actors, models and celebrities’. 
+As any good story starts, first we need the data. So let’s dig a little deeper and have a look at the repartition of men and women in our dataset (Fig.12). And the results hurt a lot, with a huge over-representation of men. While wikipedia still has some work to do on gender equality, that’s not the point here. Overall we have 689 people, with 87% of men and 9% of women, with men dominating all categories except ‘Actors, models and celebrities’. 
 
-A quick look at the starting articles from the paths gives the approximate same distribution, but a slightly slower percentage of women in the end articles (Fig 9). This can be explained by the fact that players are allowed to choose their final target.
+A quick look at the starting articles from the paths gives the approximate same distribution, but a slightly slower percentage of women in the end articles (Fig 11). This can be explained by the fact that players are allowed to choose their final target.
 
 
 
@@ -287,8 +287,7 @@ A quick look at the starting articles from the paths gives the approximate same 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : Distribution of people first subcategories by gender</p>
 
-
-Now let’s look at these bar plots a little more in detail. Firstly, between men and women, we notice that the ‘People’ arrives for both categories around the middle of the ranking, thus reinforcing that counts aren’t fool proof. However, we do notice that people count more for women than men. 
+Now let’s look at these path bar plots we saw earlier a little more in detail (Fig 13). Firstly, between men and women, we notice that the ‘People’ arrives for both categories around the middle of the ranking, thus reinforcing that counts aren’t fool proof. However, we do notice that people count more for women than men. 
 
 If we saw you reading this right now, we would expect you to look like this : 
 
@@ -316,7 +315,7 @@ Yes, the categories are so unevenly distributed between men and women that this 
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category</p>
 
 
 # Let's Page Rank these gender differences  
@@ -373,8 +372,8 @@ Regarding gender bias, we can first enlighten that the only category where parit
 ### References
 [^1]: Dunbar’s number. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720](https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720)
 [^2]: Jenkins R, Dowsett AJ, Burton AM. How many faces do people know? Proc R Soc B Biol Sci. 2018;285(1888):20181319. doi:10.1098/rspb.2018.1319
-[^3]: Wikispeedia. Accessed December 18, 2023. [Pie_main_cat_people.html](Pie_main_cat_people.html)
+[^3]: Wikispeedia. Accessed December 18, 2023. [https://dlab.epfl.ch/wikispeedia/play/](https://dlab.epfl.ch/wikispeedia/play/)
 [^4]: Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
 [^5]: West R. Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts.
 [^6]: Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
-[^7]: The godwin point has been reached.
+[^7]: The godwin point has been reached.[https://en.wikipedia.org/wiki/Godwin%27s_law#:~:text=Godwin's%20law%2C%20short%20for%20Godwin's,Nazis%20or%20Hitler%20approaches%201.%22](Wikipedia - Godwin's law)
