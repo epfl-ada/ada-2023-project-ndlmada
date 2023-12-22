@@ -97,7 +97,7 @@ From the repartition among categories, we can see that the only group where ther
     var selectedPlot = plotSelector.value;
     plotFramePath.src = selectedPlot;
 }</script>
-<img  width="80%"  id="plotFrameRank" frameborder="0" src="path/Art.png">
+<img  width="80%"  id="plotFramePatch" frameborder="0" src="path/Art.png">
 
 <label for="plotSelectorPath">Select a category to plot:</label>
 <select id="plotSelectorPath" onchange="loadPlotPath()">
