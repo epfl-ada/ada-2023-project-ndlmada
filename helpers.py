@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup # To Extract all the URLs from the HTML page
 from IPython.display import display
 import requests
 import csv
+import networkx as nx
 
 
 
@@ -247,8 +248,38 @@ def create_dictionary_from_tsv(file_path):
                     'secondary_subject': unquote(subjects_list[2]) if len(subjects_list) >= 3 else None,
                     'tertiary_subject': unquote(subjects_list[3]) if len(subjects_list) >= 4 else None
                 }
-    
+
     return data_dict, all_articles
+
+
+def create_dictionary_from_tsv_graph(file_path):
+    data_dict = {}
+    G = nx.DiGraph()
+    with open(file_path, 'r', newline='', encoding='utf-8') as tsvfile:
+        reader = csv.reader(tsvfile, delimiter='\t')
+        
+        all_articles = []
+        for row in reader:
+            if len(row) == 2:
+                article, subjects = row
+                subjects_list = subjects.split('.')
+                for i in range(len(subjects_list)-1):
+                    G.add_edge(unquote(subjects_list[i]), unquote(subjects_list[i+1]))
+                
+
+                article = unquote(article)
+                all_articles.append(article)
+
+                data_dict[article] = {
+                    'main_subject': unquote(subjects_list[1]) if len(subjects_list) >= 2 else None,
+                    'secondary_subject': unquote(subjects_list[2]) if len(subjects_list) >= 3 else None,
+                    'tertiary_subject': unquote(subjects_list[3]) if len(subjects_list) >= 4 else None
+                }
+    G.remove_edges_from(nx.selfloop_edges(G))
+    
+    return data_dict, all_articles, G
+
+
 
 def get_dict_from_list(path_list):
     # transform a dict with path list into a dictionary with the following items 
