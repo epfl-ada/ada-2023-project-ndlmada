@@ -20,7 +20,9 @@ To gain insights into how people are remembered, we studied the data and first s
 <p style="text-align: center;font-size: 0.8em;"><span color="blue" font-style="italic"> Fig. 1 :</span> Visualisation of the first three subcategories of all articles </p>
 
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" >enre plot</iframe>
-<p style="text-align: center;font-size: 0.8em;" font-style="italic"><span color="blue" > Fig. 2 :</span> Distribution of the first two subcategories.</p>
+<p style="text-align: center;font-size: 0.8em;" font-style="italic"><span color="blue" > [Fig. 2] :</span> Distribution of the first two subcategories.</p>
+
+The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category ([Fig. 2]). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative">enre plot</iframe>
