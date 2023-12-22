@@ -142,7 +142,7 @@ How can one resolve this problem and devise a kind of ranking for the pages?
 Use PageRank ! 
 
 
-<img src="captain_obvious.jpg" width="50%" display="block" margin-left="auto" margin-right="auto">
+<div style="text-align: center;"><img src="captain_obvious.jpg" width="50%" ></div>
 
 The idea of PageRank is that the most important node in a directed graph is the node that is pointed to by the most “important” nodes. 
 So, by taking all the paths that players took while trying to find a People page, putting them into a graph, and then running the pagerank algorithm on this graph, you get the most important node in the players' paths, which is... the United States!
