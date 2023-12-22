@@ -45,6 +45,42 @@ Due to these two observations, we will focus on the last three links before reac
 
 # What do these last three links tell us?
 In Fig. 5, we can look at the category distribution of the three last steps for each finished path. We separated each plot according to the target category. The colours of the lines correspond to the category visited by the node (N-1) just before reaching the target. This colour choice allows us to notice, for example, that in Science for most of the paths, whatever the category in N-3, most of them finished in the Science category in N-1. Most of the targets are reached from articles of various categories, but there are some exceptions, such as for the Mathematics or Music targets, which mostly stay in their own categories, which is coherent with Fig.4.
+	
+<script type="text/javascript"> function loadPlotPath() {
+    var plotSelector = document.getElementById('plotSelectorPath');
+    var plotFrame = document.getElementById('plotFramePath');
+
+    var selectedPlot = plotSelector.value;
+    plotFramePath.src = selectedPlot;
+}</script>
+
+<img  width="80%"  id="plotFramePath" frameborder="0" src="path/Art.png">
+
+<label for="plotSelectorPath">Select a category to plot:</label>
+<select id="plotSelectorPath" onchange="loadPlotPath()">
+    <option value="path/Art.png" >Art</option>
+    <option value="path/Business_Studies.png" >Business & Studies</option>
+    <option value="path/Citizenship.png" >Citizenship</option>
+    <option value="path/Countries.png" >Countries</option>
+    <option value="path/Design_and_Technology.png" >Design & Technology</option>
+    <option value="path/Everyday_life.png" >Everyday Life</option>
+    <option value="path/Geography.png" >Geography</option>
+    <option value="path/History.png" >History</option>
+    <option value="path/IT.png" >IT</option>
+    <option value="path/Language_and_literature.png" >Language & Litterature</option>
+    <option value="path/Mathematics.png" >Mathematics</option>
+    <option value="path/Music.png" >Music</option>
+    <option value="path/People.png" >People</option>
+    <option value="path/Religion.png" >Religion</option>
+    <option value="path/Science.png" >Science</option>
+</select>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 5 : The categories of the last three articles visited, grouped by target categories. Each line corresponds to a path, and its colour corresponds to the category visited by the path in N-1 a) People target: within the last links, all the categories are more or less used to reach the target.  b) History target: mainly comes from History articles or often closely related subjects such as Countries, Geography, People and Religion. c) Science target: almost all of the paths come from Science-related subjects.  d) Mathematics target: almost all of the paths come from Mathematics-related subjects.</p>
+
+
+# What about the People?
+For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, while People only come in fourth. (Fig. 6).
+
+
 
 	
 <script type="text/javascript"> function loadPlot() {
@@ -83,36 +119,7 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
-	
-<script type="text/javascript"> function loadPlotPath() {
-    var plotSelector = document.getElementById('plotSelectorPath');
-    var plotFrame = document.getElementById('plotFramePath');
 
-    var selectedPlot = plotSelector.value;
-    plotFramePath.src = selectedPlot;
-}</script>
-
-<img  width="80%"  id="plotFramePath" frameborder="0" src="path/Art.png">
-
-<label for="plotSelectorPath">Select a category to plot:</label>
-<select id="plotSelectorPath" onchange="loadPlotPath()">
-    <option value="path/Art.png" >Art</option>
-    <option value="path/Business_Studies.png" >Business & Studies</option>
-    <option value="path/Citizenship.png" >Citizenship</option>
-    <option value="path/Countries.png" >Countries</option>
-    <option value="path/Design_and_Technology.png" >Design & Technology</option>
-    <option value="path/Everyday_life.png" >Everyday Life</option>
-    <option value="path/Geography.png" >Geography</option>
-    <option value="path/History.png" >History</option>
-    <option value="path/IT.png" >IT</option>
-    <option value="path/Language_and_literature.png" >Language & Litterature</option>
-    <option value="path/Mathematics.png" >Mathematics</option>
-    <option value="path/Music.png" >Music</option>
-    <option value="path/People.png" >People</option>
-    <option value="path/Religion.png" >Religion</option>
-    <option value="path/Science.png" >Science</option>
-</select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 
