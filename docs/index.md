@@ -19,7 +19,7 @@ To gain insights into how people are remembered, we studied the data and first s
 <img src="graph_1.png" width="45%">
 
 <iframe src="overall_dataset_bar.html" width="500px" height="280px" frameborder="0" >enre plot</iframe>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue font-style="italic"> Fig. 1 :</span> Distribution of the categories. Each article has a path of sub-categories. a) Visualisation of the first three subcategories of all articles b) Distribution of the first two subcategories.</p>
+<p style="text-align: center;font-size: 0.8em;"><span color="blue" font-style="italic"> Fig. 1 :</span> Distribution of the categories. Each article has a path of sub-categories. a) Visualisation of the first three subcategories of all articles b) Distribution of the first two subcategories.</p>
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative">enre plot</iframe>
