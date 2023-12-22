@@ -26,17 +26,25 @@ The category that interests us the most is the People one. To compare it with ot
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative"></iframe>
-<p color="blue" font-style="italic"> Fig. 3 : People and non-People distribution, from left to right, within all articles, within all the paths, and within all the paths leading to a People target</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> [Fig. 3] : People and non-People distribution, from left to right, within all articles, within all the paths, and within all the paths leading to a People target</p>
 
 
 
-How can we analyse such a dataset?
+# How can we analyse such a dataset?
 A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as countries or topics related to geography (Fig.4), as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article5. 
 
 
 ![Graphe](path_graph.png)
-<p style="text-align: center;font-size: 0.8em;"><p style="color :blue"> Fig. 4 : Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em;"> style="color :blue"> Fig. 4 : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
 
+Due to these two observations, we will focus on the last three links before reaching the target. In Fig.5, we can observe the behaviour of those reduced paths according to the category of their target.
+
+
+
+
+
+# What do these last three links tell us?
+In Fig. 5, we can look at the category distribution of the three last steps for each finished path. We separated each plot according to the target category. The colours of the lines correspond to the category visited by the node (N-1) just before reaching the target. This colour choice allows us to notice, for example, that in Science for most of the paths, whatever the category in N-3, most of them finished in the Science category in N-1. Most of the targets are reached from articles of various categories, but there are some exceptions, such as for the Mathematics or Music targets, which mostly stay in their own categories, which is coherent with Fig.4.
 
 	
 <script type="text/javascript"> function loadPlot() {
