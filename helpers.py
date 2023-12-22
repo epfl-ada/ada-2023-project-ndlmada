@@ -291,7 +291,6 @@ def create_dict_for_plotly_bar(new_path_dict):
 def transform_path_main_category(path, dict_article_target):
     split_path = path.split(';')
     split_cat = []
-
     for art in split_path:
          if art[0] != '.' : 
             try: art in dict_article_target.keys()
