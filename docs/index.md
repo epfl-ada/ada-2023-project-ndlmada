@@ -51,8 +51,8 @@ Due to these two observations, we will focus on the three last links before reac
 <label for="plotSelector">Select a category to plot:</label>
 <select id="plotSelector" onchange="loadPlot()">
     <option src="bar/path_bar_Art.html" target='updateMe'>Art</option>
-    <option src="bar/path_bar_Countries.html">Countries</option>
-    <option src="bar/path_bar_IT.html">IT</option>
+    <option src="bar/path_bar_Countries.html" target='updateMe'>Countries</option>
+    <option src="bar/path_bar_IT.html" target='updateMe'>IT</option>
     <!-- Add more options as needed -->
 </select>
 <iframe name='updateMe' id="plotFrame" width="100%" height="400px" frameborder="0" src="bar/path_bar_Art.html"></iframe>
