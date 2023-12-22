@@ -50,7 +50,6 @@ Due to these two observations, we will focus on the three last links before reac
     plotFrame.src = selectedPlot;
 }</script>
 <iframe name='updateMe' id="plotFrame" width="100%" height="530px" frameborder="0" src="bar/path_bar_Art.html"></iframe>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 <label for="plotSelector">Select a category to plot:</label>
 <select id="plotSelector" onchange="loadPlot()">
@@ -70,6 +69,7 @@ Due to these two observations, we will focus on the three last links before reac
     <option value="bar/path_bar_Religion.html">Religion</option>
     <option value="bar/path_bar_Science.html">Science</option>
 </select>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 In Fig. 4a, except for a few target categories such as mathematics or music that are more restricted, it seems that most of the targets are reached from articles of various categories. For the people target, the last link comes from all categories. However, the people-to-people last link seems a bit thinner than other categories targeting people. A second visualisation (Fig. 4b), confirmed those observations. Indeed, for the non-people target, the previous path stays at most in the same categories, while for people it comes from different areas and only on fourth from people. This distinction between people and non-people may be related to the second sub-categories of the article. When non-people second subcategory remains in the same genre as the primary category, the second sub-category of people varies a lot. There are 20 sub-categories of people (Fig. 5). As we can observe, the biggest sub-categories (historical figures) can be also classified as history, the most represented number of articles of this category before the path end in people.  (MAYBE; A VERIFIER).
@@ -108,7 +108,6 @@ If we apply gender analysis to the page rank,
     plotFrameGender.src = selectedPlot;
 }</script>
 <iframe  id="plotFrameGender" width="100%" height="530px" frameborder="0" src="bar/path_bar_women.html"></iframe>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 <label for="plotSelectorGender">Select a category to plot:</label>
 <select id="plotSelectorGender" onchange="loadPlotGender()">
@@ -118,6 +117,7 @@ If we apply gender analysis to the page rank,
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 
