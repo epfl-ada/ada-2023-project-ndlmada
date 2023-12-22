@@ -97,7 +97,7 @@ From the repartition among categories, we can see that the only group where ther
     var selectedPlot = plotSelector.value;
     plotFramePath.src = selectedPlot;
 }</script>
-<img  width="100%"  id="plotFrameRank" frameborder="0" src="path/Art.png"></img>
+<img  width="80%"  id="plotFrameRank" frameborder="0" src="path/Art.png">
 
 <label for="plotSelectorPath">Select a category to plot:</label>
 <select id="plotSelectorPath" onchange="loadPlotPath()">
@@ -116,7 +116,6 @@ From the repartition among categories, we can see that the only group where ther
     <option value="path/People.png" >People</option>
     <option value="path/Religion.png" >Religion</option>
     <option value="path/Science.png" >Science</option>
-
 </select>
 
 ## PageRank and gender
