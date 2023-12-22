@@ -772,44 +772,4 @@ def create_graph_Gender_n_last(path_finished_dfs, path_unfinished_dfs, gender_di
                 else:
                     G.add_edge(tuple_to_add[0], tuple_to_add[1], weight=1)
 
-    for index, row in path_unfinished_dfs.iterrows():
-
-        path = row['path'].split(';')
-
-        try: 
-            gender_last = gender_dict[row["target"]]
-        except KeyError as e:
-            #print("KeyError for ", e)
-            continue
-
-        if isinstance(gender_last, float) and math.isnan(gender_last):
-            continue
-        
-        
-        if gender_last == target_gender or (both_gender and (gender_last == "Male" or gender_last == "Female")):
-            endnode_names.append(row["target"])
-
-            edges_to_add = []
-            for i in range(len(path) -1 -indexing_correction):
-
-                # The "."" at the beggining is a marker of going back to this page, we don't want to add the backlink
-                if path[i+1][0] == '.': 
-                    continue
-                
-                # Remove the "." at the beggining of the node name, this is ok since itterows gives a copy of the dataframe
-                if path[i][0] == ".":
-                    path[i] = path[i][1:]
-
-                edges_to_add.append((path[i], path[i+1]))
-            
-            # We add only the last 3 edges of the path to the graph
-            starting_index = len(edges_to_add)-1
-            for i in range(starting_index, max(starting_index-n, -1), -1):
-                tuple_to_add = edges_to_add[i]
-
-                if G.has_edge(tuple_to_add[0], tuple_to_add[1]):
-                    G[tuple_to_add[0]][tuple_to_add[1]]['weight'] += 1
-                else:
-                    G.add_edge(tuple_to_add[0], tuple_to_add[1], weight=1)
-
     return G, endnode_names
