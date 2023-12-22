@@ -14,19 +14,19 @@ Overall, we remember different people for different reasons. There are those who
 # Wikispeedia and exploration of our data:
 To answer our question, we used data from the Wikispeedia Game [^3] developed by the Data Science Lab (dLab), a research group at EPFL[^4]. The aim of this game is to navigate from one Wikipedia page to another using the links between them and create the shortest path you can. The number of articles available is only a fraction of the Wikipedia database. The choice of source and target articles is either randomly assigned by the game or chosen by the player.
 
-To gain insights into how people are remembered, we studied the data and first started by looking into the different article categories. Each category is a grouping of sub-categories. Fig.1.a is the representation of the three first sub-categories. We will refer to the first nodes of the category path as categories and the second nodes as sub-categories.
+To gain insights into how people are remembered, we studied the data and first started by looking into the different article categories. Each category is a grouping of sub-categories. Fig.1 is the representation of the three first sub-categories. We will refer to the first nodes of the category path as categories and the second nodes as sub-categories.
 
 <img src="graph_1.png" width="100%">
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> [Fig. 1] : Visualisation of the first three subcategories of all articles </p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 1 : Visualisation of the first three subcategories of all articles </p>
 
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic">[Fig. 2] : Distribution of the first two subcategories.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic">Fig. 2 : Distribution of the first two subcategories.</p>
 
 The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People. Thislow proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative"></iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> [Fig. 3] : People and non-People distribution, from left to right, within all articles, within all the paths, and within all the paths leading to a People target</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 3 : People and non-People distribution, from left to right, within all articles, within all the paths, and within all the paths leading to a People target</p>
 
 
 
@@ -35,7 +35,7 @@ A common way to play Wikispeedia is to first reach a general concept with many o
 
 
 ![Graphe](path_graph.png)
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> [Fig. 4] : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 4 : Representation of the number of links between categories. The plot does not take into account the self-linking, and the categories that do not have enough linking numbers between them are not shown. It means, for example, that IT, Art and Mathematics mainly stay in their categories and that Geography is reached by a large number of other categories.</p>
 
 Due to these two observations, we will focus on the last three links before reaching the target. In Fig.5, we can observe the behaviour of those reduced paths according to the category of their target.
 
@@ -121,7 +121,7 @@ This distinction between People and non-People may be related to their sub-categ
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 : Distribution of People first subcategories</p>
 
 
-Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same categories, even when those categories are less represented, such as Music, Religion, or Art (Fig. 1.b). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains the dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This suggests that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
+Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same categories, even when those categories are less represented, such as Music, Religion, or Art (Fig. 2). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains the dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This suggests that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
  
 
 
@@ -186,7 +186,11 @@ We could now say that the player tends to search for People by looking at other 
  
 But that would be a bit too easy, and we want to deepen the analysis a bit. The rest of the categories seem very similar, with the mean being pretty much in the middle of the ranks.
 But maybe this importance rank changes as we approach the target nodes?
-Indeed, we see in Fig.XXX that the distribution of the categories of the starting nodes is not uniform at all, with History and Geography being way more represented. This could induce a bias, as by starting with a country, one might stick with countries for 2-3 jumps before jumping into a new category, and therefore the importance of countries is artificially high in the beginning of the paths but dies down as we approach the target.
+Indeed, we see in Fig.9 that the distribution of the categories of the starting nodes is not uniform at all, with History and Geography being way more represented. This could induce a bias, as by starting with a country, one might stick with countries for 2-3 jumps before jumping into a new category, and therefore the importance of countries is artificially high in the beginning of the paths but dies down as we approach the target.
+
+
+<iframe src="line_start_cat.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 9 : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
 
 
 So let's now compute the pagerank on the graph where only the target - n paths are added. 
@@ -203,7 +207,7 @@ By doing it for n from 1 to 7 and graphing the medians depending on n, we find t
 
 
 <iframe src="line_rank.html" width="100%" height="630px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 9 : Graph of the evolution of category’s median ranks through the players’ paths</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Graph of the evolution of category’s median ranks through the players’ paths</p>
 
 The importance of the People category is even clearer than in the previous graph; we clearly see that the People category is more important at the beginning, middle, and end of paths taken by the players. And we can really affirm that People are more known by the general public for who they know than for what they do. 
 
@@ -228,7 +232,7 @@ This caveat could then explain the difference between the counting and pagerank 
 It is important to see that this pagerank analysis doesn’t completely cancel the counting analysis done beforehand, but it comes as a complement.
 The counting analysis states that people are in general known by what they did, and it shows the disparity of knowledge among the players. One could argue that if all the players came together, they would be able to state everything that a person did, and it shows in a way that the population never forgets.
 The pagerank analysis, on the other hand, states that a large portion of the players know most of the targets based on who they interacted with. Yes, the targets did a lot of things, but it is easier to both remember and find the person related to the target than what they achieved. Most of the players even went through the same People page to find their common target, which shows how important this People is in the path. 
-We also see that the Countries are really important in the Wikipedia architecture as they are related to most of the pages and have by far the biggest pagerank (see Fig. below), but in the paths they are not important. This consolidates the fact that the People category is important because, even with Countries being very present (and so a lot of occasions for the players to find their target via the Countries), the People category came in at the top. 
+We also see that the Countries are really important in the Wikipedia architecture as they are related to most of the pages and have by far the biggest pagerank (Fig. 11), but in the paths they are not important. This consolidates the fact that the People category is important because, even with Countries being very present (and so a lot of occasions for the players to find their target via the Countries), the People category came in at the top. 
 
 
 
@@ -260,7 +264,7 @@ We also see that the Countries are really important in the Wikipedia architectur
     <option value="rank_cat2/religion.png" >Religion</option>
     <option value="rank_cat2/science.png" >Science</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 10 : Distribution of the rank of each category. This ranking was calculated using PageRank on the network created by the links in the pages (Exactly what PageRank was created to do: rank pages).</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 11 : Distribution of the rank of each category. This ranking was calculated using PageRank on the network created by the links in the pages (Exactly what PageRank was created to do: rank pages).</p>
 
 
 
@@ -276,12 +280,12 @@ A quick look at the starting articles from the paths gives the approximate same 
 
 
 <iframe src="pie_gender_start_finish.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 11 : Gender distribution in the paths, for the a) Start articles b) Target articles</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 12 : Gender distribution in the paths, for the a) Start articles b) Target articles</p>
 
 
 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 12 : Distribution of people first subcategories by gender</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : Distribution of people first subcategories by gender</p>
 
 
 Now let’s look at these bar plots a little more in detail. Firstly, between men and women, we notice that the ‘People’ arrives for both categories around the middle of the ranking, thus reinforcing that counts aren’t fool proof. However, we do notice that people count more for women than men. 
@@ -312,7 +316,7 @@ Yes, the categories are so unevenly distributed between men and women that this 
     <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
     <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 13 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Distribution of the N-3 articles leading to a target in people (change sub-category in selection box). The count per step was normalised by the total number of articles in each category.</p>
 
 
 # Let's Page Rank these gender differences  
@@ -323,7 +327,7 @@ With pagerank, we can avoid the target disparity problem and be more general wit
 To do so, we create two graphs, one containing the paths where the target nodes are women (we call it the women's paths network) and the other where the target nodes are men (the men's paths network). This creates distinct graphs; we can then find two independent rankings for those graphs and then look at the difference between the two rankings.
 Are people better ranked in the women's graph and therefore more important than in the men's graph? Or is it the opposite?
 
-We have done this, and these are the results [Fig. XXX]. The graph is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
+We have done this, and these are the results (Fig. XXX). The graph is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
 This graph shows the difference in ranking (and, therefore, importance) of the different pages between the women's paths network and the men's paths network.
  We can see in grey the difference in ranking of all the pages that are not about people; it makes a nice normal distribution. Some pages are more important than others, but the mean is pretty much 0.
  Next to this non-People mean, we have the mean of the differences in rank for the People pages. There is a slight augmentation in rank between the women's paths network and the men's paths network, but nothing significant.
@@ -347,7 +351,7 @@ What we get from this graph is that there is a strong imbalance and women tend t
 
 
 PAGERANKTIMOOOOOOOOOOOOOOO
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 14 : Difference of rank between the women's paths network and the men’s path network, a node that gained rank in the men’s path network compared with his ranking in the women’s path network would be on the right of the 0 </p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 15 : Difference of rank between the women's paths network and the men’s path network, a node that gained rank in the men’s path network compared with his ranking in the women’s path network would be on the right of the 0 </p>
 
 
 
