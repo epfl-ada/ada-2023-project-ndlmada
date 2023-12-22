@@ -49,7 +49,7 @@ Due to these two observations, we will focus on the three last links before reac
     var selectedPlot = plotSelector.value;
     plotFrame.src = selectedPlot;
 }</script>
-<iframe scrolling="no" width="100%" height="512" align="left" id="plotFrame" frameborder="0" src="bar/path_bar_Art.html"></iframe>
+<iframe scrolling="no" width="50%" height="512" align="left" id="plotFrame" frameborder="0" src="bar/path_bar_Art.html"></iframe>
 
 <label for="plotSelector">Select a category to plot:</label>
 <select id="plotSelector" onchange="loadPlot()">
@@ -69,10 +69,8 @@ Due to these two observations, we will focus on the three last links before reac
     <option value="bar/path_bar_Religion.html">Religion</option>
     <option value="bar/path_bar_Science.html">Science</option>
 </select>
-</div>
 
-<div float="right">
-<iframe scrolling="no" width="100%" height="512" align="left" id="plotFrame" frameborder="0" src="bar/path_bar_People.html"></iframe>
+<iframe scrolling="no" width="50%" height="512" align="right" id="plotFrame" frameborder="0" src="bar/path_bar_People.html"></iframe>
 </div>
 
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
