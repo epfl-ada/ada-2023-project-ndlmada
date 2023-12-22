@@ -203,7 +203,7 @@ def get_color_from_gender(Node_name, dfs):
     else:
         return (0, 0, 0)
 
-## MMM BOF PROBLEMES chiant 
+
 def get_color_from_category(Node_name, dfs):
     """
     Returns a color depending on the category of the node
@@ -549,3 +549,267 @@ def graph_category_rank(df_rank, all_cat):
             axes[i, j].axvline(df_subset_cat["Rank"].median(), color="Black", linestyle='dashed', linewidth=1, alpha=0.75, label='Median')
             axes[i, j].set_xlabel("Rank")
             axes[i, j].set_ylabel("Number of nodes normalized")
+
+
+def get_median_rank_per_cat(df, all_cat):
+    data = {}
+    for cat in all_cat:
+        data[cat] = df.loc[df["MainCat"] == cat, "Rank"].median()
+
+    df_out = pd.DataFrame(list(data.items()), columns=['MainCat', 'MedianRank']).set_index("MainCat")
+    
+    return df_out
+
+
+def create_graph_cats_gender(dfs, categories_dict, gender_dict):
+    """
+    Create a graph with the categories as nodes and the links between them as edges
+
+    Args:
+        dfs (dict): Dictionary of the dataframes
+        categories_dict (dict): Dictionary of the categories of the nodes
+    """
+
+    G = nx.DiGraph()
+
+    path_finished_dfs = dfs["paths_finished"]
+    path_unfinished_dfs = dfs["paths_unfinished"]
+
+    for index, row in path_finished_dfs.iterrows():
+
+        path = row['path'].split(';')
+        
+        try: 
+            gender_last = gender_dict[path[-1]]
+        except KeyError as e:
+            #print("KeyError for ", e)
+            continue
+        
+        # The isinstace is required otherwise math.isnan(gender_last) will throw an error
+        if isinstance(gender_last, float) and math.isnan(gender_last):
+            continue
+
+        # If it is the good gender we add the entire path to the graph
+        if gender_last == "Male" or gender_last == "Female":
+
+            # Gets the category of the first node in the path that has a category  
+            start = 0  
+            for i in range(len(path)- 1):
+                try:
+                    category_from = categories_dict[path[i]]['main_subject']
+                    start = i  
+                    G.add_node(category_from, weight=1)
+                    break
+                except KeyError as e:
+                    #print("KeyError for ", e, " in ", path[i], "index is ", i)
+                    continue
+
+            # We go from start + 1 to not get twice the same node and we go to len(path) - 2 to not get the last node
+            for i in range(start + 1, len(path)- 2):
+                
+                # The "."" at the beggining is a marker of going back to this page, we don't want to add the backlink
+                if path[i+1][0] == '.': 
+                    continue
+                
+                # Remove the "." at the beggining of the node name, this is ok since itterows gives a copy of the dataframe
+                if path[i][0] == ".":
+                    path[i] = path[i][1:]
+
+
+                try: 
+                    category_to = categories_dict[path[i]]['main_subject']
+
+                except KeyError as e:
+                    #print("Cat_to KeyError for ", e, " in ", path[i], "index is ", i)
+                    continue
+                
+
+                if G.has_node(category_to):
+                    G.nodes[category_to]['weight'] += 1
+                else:
+                    G.add_node(category_to, weight=1)
+                
+
+                if G.has_edge(category_from, category_to):
+                    G[category_from][category_to]['weight'] += 1
+                else:
+                    G.add_edge(category_from, category_to, weight=1)
+
+                
+            
+                category_from = category_to
+            
+    
+
+    for index, row in path_unfinished_dfs.iterrows():
+
+        path = row['path'].split(';')
+
+        try: 
+            gender_last = gender_dict[row["target"]]
+        except KeyError as e:
+            #print("KeyError for ", e)
+            continue
+
+        if isinstance(gender_last, float) and math.isnan(gender_last):
+            continue
+        
+        if gender_last == "Male" or gender_last == "Female":
+        
+            # Gets the category of the first node in the path that has a category  
+            start = 0  
+            for i in range(len(path)- 1):
+                try:
+                    category_from = categories_dict[path[i]]['main_subject']
+                    start = i  
+                    G.add_node(category_from, weight=1)
+                    break
+                except KeyError as e:
+                    #print("KeyError for ", e, " in ", path[i], "index is ", i)
+                    continue
+
+            # We go from start + 1 to not get twice the same node 
+            for i in range(start + 1, len(path)- 1):
+                
+                # The "."" at the beggining is a marker of going back to this page, we don't want to add the backlink
+                if path[i+1][0] == '.': 
+                    continue
+                
+                # Remove the "." at the beggining of the node name, this is ok since itterows gives a copy of the dataframe
+                if path[i][0] == ".":
+                    path[i] = path[i][1:]
+
+
+                try: 
+                    category_to = categories_dict[path[i]]['main_subject']
+
+                except KeyError as e:
+                    #print("Cat_to KeyError for ", e, " in ", path[i], "index is ", i)
+                    continue
+                
+
+                if G.has_node(category_to):
+                    G.nodes[category_to]['weight'] += 1
+                else:
+                    G.add_node(category_to, weight=1)
+                
+
+                if G.has_edge(category_from, category_to):
+                    G[category_from][category_to]['weight'] += 1
+                else:
+                    G.add_edge(category_from, category_to, weight=1)
+
+                
+            
+                category_from = category_to
+
+    return G
+
+def create_graph_Gender_n_last(path_finished_dfs, path_unfinished_dfs, gender_dict, target_gender: str, last_node_from_path: bool = False, both_gender = False, n=3):
+    """
+    Creates a graph of all the paths where the gender of the target node is equal to target_gender. 
+    If Both_gender is True, creates a graph of the paths where a Male or a Female is the target node. 
+
+    Args:
+        path_finished_dfs (dataframe): dataframe of the finished paths
+        path_unfinished_dfs (dataframe): dataframe of the unfinished paths
+        gender_dict (dict): dict of the gender of the nodes 
+        target_gender (str): gender of the taget node 
+        last_node_from_path (bool, optional): If True, the target node is the created grap. Defaults to False.
+        both_gender (bool): If true, both gender are added to the graph. Defaults to False.
+
+    Returns:
+        G (graph): graph of the paths
+        endnode_names (list): list of the names of the target nodes, this lists contains repetitions if the target node is the same in multiple paths
+    
+    """    
+
+    G = nx.DiGraph()
+    endnode_names = []
+    indexing_correction = 1 if last_node_from_path else 0
+    
+
+    for index, row in path_finished_dfs.iterrows():
+
+        path = row['path'].split(';')
+
+        try: 
+            gender_last = gender_dict[path[-1]]
+        except KeyError as e:
+            # BEACOUP DE KEY ERROR TODO !!
+            #print("KeyError for ", e)
+            continue
+        
+        # The isinstace is required otherwise math.isnan(gender_last) will throw an error
+        if isinstance(gender_last, float) and math.isnan(gender_last):
+            continue
+        
+        # If it is the good gender we add the entire path to the graph
+        if gender_last == target_gender or (both_gender and (gender_last == "Male" or gender_last == "Female")):
+            endnode_names.append(path[-1])
+            
+            edges_to_add = []
+            # Add the path to the graph or adds 1 to the weight if the edge already exists
+            for i in range(len(path)-1 -indexing_correction):
+                
+                # The "."" at the beggining is a marker of going back to this page, we don't want to add the backlink
+                if path[i+1][0] == '.': 
+                    continue
+                
+                # Remove the "." at the beggining of the node name, this is ok since itterows gives a copy of the dataframe
+                if path[i][0] == ".":
+                    path[i] = path[i][1:]
+                
+                edges_to_add.append((path[i], path[i+1]))
+        
+            # We add only the last n edges of the path to the graph
+            starting_index = len(edges_to_add)-1
+            for i in range(starting_index, max(starting_index-n, -1), -1):
+                tuple_to_add = edges_to_add[i]
+
+                if G.has_edge(tuple_to_add[0], tuple_to_add[1]):
+                    G[tuple_to_add[0]][tuple_to_add[1]]['weight'] += 1
+                else:
+                    G.add_edge(tuple_to_add[0], tuple_to_add[1], weight=1)
+
+    for index, row in path_unfinished_dfs.iterrows():
+
+        path = row['path'].split(';')
+
+        try: 
+            gender_last = gender_dict[row["target"]]
+        except KeyError as e:
+            #print("KeyError for ", e)
+            continue
+
+        if isinstance(gender_last, float) and math.isnan(gender_last):
+            continue
+        
+        
+        if gender_last == target_gender or (both_gender and (gender_last == "Male" or gender_last == "Female")):
+            endnode_names.append(row["target"])
+
+            edges_to_add = []
+            for i in range(len(path) -1 -indexing_correction):
+
+                # The "."" at the beggining is a marker of going back to this page, we don't want to add the backlink
+                if path[i+1][0] == '.': 
+                    continue
+                
+                # Remove the "." at the beggining of the node name, this is ok since itterows gives a copy of the dataframe
+                if path[i][0] == ".":
+                    path[i] = path[i][1:]
+
+                edges_to_add.append((path[i], path[i+1]))
+            
+            # We add only the last 3 edges of the path to the graph
+            starting_index = len(edges_to_add)-1
+            for i in range(starting_index, max(starting_index-n, -1), -1):
+                tuple_to_add = edges_to_add[i]
+
+                if G.has_edge(tuple_to_add[0], tuple_to_add[1]):
+                    G[tuple_to_add[0]][tuple_to_add[1]]['weight'] += 1
+                else:
+                    G.add_edge(tuple_to_add[0], tuple_to_add[1], weight=1)
+
+    return G, endnode_names
