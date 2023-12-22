@@ -271,7 +271,7 @@ We also see that the Countries are really important in the Wikipedia architectur
 # Is this fact true for both men and women?
 
 
-In our article selection, the same tendency of women under representation as for the whole Wikipedia database is observed: the number of women is very low, which provides us with a really unbalanced dataset (Fig. 12). Notice that in the People selection, there are some unknown gender labels as groups of people, such as the Grimm brothers, or some ungendered characters, such as Pikachu.
+In our article selection, the same tendency of women under representation as for the whole Wikipedia database[^6] is observed: the number of women is very low, which provides us with a really unbalanced dataset (Fig. 12). Notice that in the People selection, there are some unknown gender labels as groups of people, such as the Grimm brothers, or some ungendered characters, such as Pikachu.
 
 As any good story starts, first we need the data. So let’s dig a little deeper and have a look at the repartition of men and women in our dataset (Fig.12). And the results hurt a lot, with a huge over-representation of men. While wikipedia still has some work to do on gender equality, that’s not the point here. Overall we have 689 people, with 87% of men and 9% of women, with men dominating all categories except ‘Actors, models and celebrities’. 
 
@@ -326,8 +326,8 @@ With pagerank, we can avoid the target disparity problem and be more general wit
 To do so, we create two graphs, one containing the paths where the target nodes are women (we call it the women's paths network) and the other where the target nodes are men (the men's paths network). This creates distinct graphs; we can then find two independent rankings for those graphs and then look at the difference between the two rankings.
 Are people better ranked in the women's graph and therefore more important than in the men's graph? Or is it the opposite?
 
-We have done this, and these are the results (Fig. 15). The graph is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
-This graph shows the difference in ranking (and, therefore, importance) of the different pages between the women's paths network and the men's paths network.
+We have done this, and these are the results (Fig. 15). The plot is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
+This plot shows the difference in ranking (and, therefore, importance) of the different pages between the women's paths network and the men's paths network.
  We can see in grey the difference in ranking of all the pages that are not about people; it makes a nice normal distribution. Some pages are more important than others, but the mean is pretty much 0.
  Next to this non-People mean, we have the mean of the differences in rank for the People pages. There is a slight augmentation in rank between the women's paths network and the men's paths network, but nothing significant.
 
@@ -361,10 +361,13 @@ PAGERANKTIMOOOOOOOOOOOOOOO
 # Conclusion and limitations
 Overall, People targets are more reached via category articles than via a social circle. However, does that mean we remember them more by their achievement? Not necessarily. In fact, in this analysis, there are many biases to consider. 
 
-First at all, as mentioned above, the Wikispeedia game is based on only a fraction of the Wikipedia database. Maybe this reduction in the number of articles introduced a bias of selection. Furthermore, since the players can choose the source-target pairs, they tend to choose articles they know more about which do not reflect the common knowledge everybody will have about the celebrities. Also, it may be that the way the articles are constructed influences the choice of the players since lots of them want to play as fast as possible. Do short articles lead to wiser choices? Do people prefer to select links that are on a table summary, on a paragraph at the top of the page, or on a legend of an image? 
+First of all, as mentioned above, the Wikispeedia game is based on only a fraction of the Wikipedia database. Maybe this reduction in the number of articles introduced a bias of selection. Furthermore, since the players can choose the source-target pairs, they tend to choose articles they know more about which do not reflect the common knowledge everybody will have about the celebrities. Also, it may be that the way the articles are constructed influences the choice of the players since lots of them want to play as fast as possible. Do short articles lead to wiser choices? Do people prefer to select links that are on a table summary, on a paragraph at the top of the page, or on a legend of an image? 
 
 Lastly, something we must not forget is that Wikispeedia is a game. As for all games, some strategies are made to reach the goal more efficiently, so it might be a huge influence on the choice made by the players. Hence, people within this article selection are not reached through their social circle. They tend to be more selected by the domained they are known for. 
-Regarding gender bias, we can first enlighten that the only category where parity is met is Actors_models_and_celebrity, while women are under-represented in other fields. Therefore, it’s hard to analyse a gender bias in the whole dataset. With the page rank, we can get a more general view by avoiding the target disparity problem. As a result of these analyses, we discovered that there is indeed a bias when choosing the article’s links to follow. To find a women’s page, the player will tend to pass by both men and women's pages, while to find a man’s page, it’s rare for the player to go through a woman’s page.
+
+Then regarding gender bias, through our analysis of the paths and their obtained PageRank we discovered that there is indeed a bias when choosing the links to follow in the game’s article. Indeed, to find a women’s page, the player will tend to pass by both men and women's pages, while to find a man’s page, it’s rare for the player to go through a woman’s page. 
+As a final word, bad news : you should rather not show this to girls around the world as it doesn’t really show a good image of women and their recognition. But good news : you will be remembered for your accomplishments and not your famous best friend. So, if you have some free time on a weekend, don’t hesitate to write a page about a famous woman, and let’s break down this digital gender inequality.
+
 
 
 
