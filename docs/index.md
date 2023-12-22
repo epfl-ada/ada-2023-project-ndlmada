@@ -88,14 +88,16 @@ From the repartition among categories, we can see that the only group where ther
 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+	
+<script type="text/javascript"> function loadPloPatht() {
+    var plotSelector = document.getElementById('plotSelectorPath');
+    var plotFrame = document.getElementById('plotFramePath');
 
-<script type="text/javascript"> 
-$('#plotSelectorPath').change(function(){
-  $('#plotFramePatch')[0].src = this.value;
-});
-</script>
+    var selectedPlot = plotSelector.value;
+    plotFramePath.src = selectedPlot;
+}</script>
 
-<img  width="80%"  id="plotFramePatch" frameborder="0" src="path/Art.png">
+<img  width="80%"  id="plotFramePath" frameborder="0" src="path/Art.png">
 
 <label for="plotSelectorPath">Select a category to plot:</label>
 <select id="plotSelectorPath" onchange="loadPlotPath()">
