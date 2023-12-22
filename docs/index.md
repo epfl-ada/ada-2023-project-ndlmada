@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 Have you ever wondered how many people you know? Well, the answer depends on what you mean by “knowing” and even like this, it’s not an easy question to answer. Quite a few scientists have tackled this question. First of all, let’s consider the people you really know, the one you could have a drink with when you cross them in the street. This question was answered in the nineties by the British anthropologist Robin Dunbar. He linked the size of the primates’ brains to their ability to remember their peers. Given this, he concluded that we know around 150 people[^1]. 
 
 But that seems rather small, right? Think about all the people you went to school with, or all of your coworkers, that’s definitely more than 150. So let’s consider a new category then. Can you tell me how many faces you remember? Whether it be your favourite singer whom you never met but would definitely recognise, or the cashier you see every week at the supermarket but whose name you don’t know, these are all faces that you recognize in a crowd. In this case, studies showed that humans remember around 5,000 faces, which makes already more sense[^2].
@@ -20,10 +13,11 @@ To answer our question, we used the data from the Wikispeedia Game[^3] developed
 To gain insights into how people are remembered, we studied the data and first started by looking looked into the different article categories. Each category is a groupment of sub-categories. Fig.1 is the representation of the three first sub-categories. 
 
 <iframe src="overall_dataset_bar.html" width="1100px" height="530px" frameborder="0" position="relative">enre plot</iframe>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 The category that interested us the most is the one about of people. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 15% of the articles are about people. Even so, this category still represents the third most prominent category as observed in Fig.2. However, not all articles are selected as targets. Within target articles the target group, around 12% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25% of the articles visited are people. The percentage of people articles visited is lower than those of non-people, but it is not surprising given the distribution of people/non-people articles. If we looked at the ratio of the categories distribution within the path divided by the categories distribution among the articles and compared for the people and non-people articles, we found two ratios quite similar. Thus according to the repartition of people pages and non-people pages, the 25% is not so low. 
 
-<iframe src="Pie_paths_percentages.html" width="100%" height="350px" frameborder="0" position="relative">enre plot</iframe>
+<iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative">enre plot</iframe>
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 ## Path representation & Game strategy: 
 We wanted to visualise the path leading to each people target to analyse their behaviour. Spoiler: the comparison of 631 distinct plots is not the most efficient way to look at our data. As obvious as it may seem, we, however, created a function to do the plot before realising that. In theory, we wanted to put the target node in evidence and all around it, each path, with the primary category colour for each node. In reality, it doesn’t look as nice as expected, for various reasons such as the presence of return in the paths or just because they are highly connected.
@@ -40,6 +34,7 @@ However, we noticed something from those plots: the targets tend to be reached b
 A common way to play Wikispeedia is to first reach a general concept with many outgoing links, such as country and geography, as fast as possible. Then, players narrow down the research on the subject to find articles as close as possible to the subject of the target. The first phase heavily depends on the source article, and the second phase on the target article[^5].
 
 ![Graphe](path_graph.png)
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 Due to these two observations, we will focus on the three last links before reaching the target. In Fig.4, we can observe the behaviour of those reduced paths according to the category of their target. 
 
@@ -55,6 +50,7 @@ Due to these two observations, we will focus on the three last links before reac
     plotFrame.src = selectedPlot;
 }</script>
 <iframe name='updateMe' id="plotFrame" width="100%" height="530px" frameborder="0" src="bar/path_bar_Art.html"></iframe>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 <label for="plotSelector">Select a category to plot:</label>
 <select id="plotSelector" onchange="loadPlot()">
@@ -79,6 +75,7 @@ Due to these two observations, we will focus on the three last links before reac
 In Fig. 4a, except for a few target categories such as mathematics or music that are more restricted, it seems that most of the targets are reached from articles of various categories. For the people target, the last link comes from all categories. However, the people-to-people last link seems a bit thinner than other categories targeting people. A second visualisation (Fig. 4b), confirmed those observations. Indeed, for the non-people target, the previous path stays at most in the same categories, while for people it comes from different areas and only on fourth from people. This distinction between people and non-people may be related to the second sub-categories of the article. When non-people second subcategory remains in the same genre as the primary category, the second sub-category of people varies a lot. There are 20 sub-categories of people (Fig. 5). As we can observe, the biggest sub-categories (historical figures) can be also classified as history, the most represented number of articles of this category before the path end in people.  (MAYBE; A VERIFIER).
 
 <iframe src="people_categories.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 ## Gender distribution in Wikispeedia
@@ -88,6 +85,7 @@ First of all, we extract from Wikidataan external database the gender of people 
 From the repartition among categories, we can see that the only group where there seems to have an equal repartition is for actors, models and celebrities. (MAYBE WE CAN LOOK AT THEM TO CONCLUDE SOMETHING ?)
 
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
 
@@ -110,6 +108,7 @@ If we apply gender analysis to the page rank,
     plotFrameGender.src = selectedPlot;
 }</script>
 <iframe  id="plotFrameGender" width="100%" height="530px" frameborder="0" src="bar/path_bar_women.html"></iframe>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 <label for="plotSelectorGender">Select a category to plot:</label>
 <select id="plotSelectorGender" onchange="loadPlotGender()">
