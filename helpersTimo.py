@@ -529,4 +529,23 @@ def create_graph_links(dfs_links):
             G.add_edge(row['linkSource'], row['linkTarget'])
     return G
 
-    
+
+def get_cat(Node, result_dict):
+    try:
+        return result_dict[Node]["main_subject"]
+    except KeyError as e:
+        return np.nan
+
+def graph_category_rank(df_rank, all_cat):
+    fig, axes = plt.subplots(5, 3, figsize=(20, 25), sharex=True, sharey=True)
+    colors = plt.cm.tab20(range(20))
+
+    for i in range(5):
+        for j in range(3):
+            category = all_cat[3*i+j]
+            df_subset_cat = df_rank.loc[df_rank["MainCat"] == category, :]
+            axes[i, j].hist(df_subset_cat["Rank"], bins=100, alpha=0.5, label=category, color=colors[3*i+j], density=True)
+            axes[i, j].set_title(category)
+            axes[i, j].axvline(df_subset_cat["Rank"].median(), color="Black", linestyle='dashed', linewidth=1, alpha=0.75, label='Median')
+            axes[i, j].set_xlabel("Rank")
+            axes[i, j].set_ylabel("Number of nodes normalized")
