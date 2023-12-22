@@ -2,7 +2,7 @@ Have you ever wondered how many people you know? Well, the answer depends on wha
 
 But that seems rather small, right? Think about all the people you went to school with, or all of your coworkers, that’s definitely more than 150. So let’s consider a new category then. Can you tell me how many faces you remember? Whether it be your favourite singer whom you never met but would definitely recognise, or the cashier you see every week at the supermarket but whose name you don’t know, these are all faces that you recognize in a crowd. In this case, studies showed that humans remember around 5,000 faces, which makes already more sense[^2].
 
-<iframe src="https://giphy.com/embed/3oEduNGzfmQkYtT916" align-items="center" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/suitsusanetwork-suits-donna-paulsen-3oEduNGzfmQkYtT916">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/3oEduNGzfmQkYtT916" align-items="center" display="block" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/suitsusanetwork-suits-donna-paulsen-3oEduNGzfmQkYtT916">via GIPHY</a></p>
 
 And then there’s an even larger category, comprising all the names that you know: all your relatives, colleagues, neighbours, politicians, historical figures, artists, musicians, scientists… SThis category is almost endless but sadly no studies have managed to determine this number.
 
