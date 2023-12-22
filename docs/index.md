@@ -275,7 +275,7 @@ A quick look at the starting articles from the paths gives the approximate same 
 
 
 
-<iframe src="py_gender_start_finish.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<iframe src="pie_gender_start_finish.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
