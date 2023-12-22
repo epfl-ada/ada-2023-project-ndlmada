@@ -12,7 +12,7 @@ Now let’s forget the people you really know and focus on those we might call c
 Overall, we remember different people for different reasons. There are those whom we know everything about, those we learned about in school, those we know for what they did, where they lived, or who they knew. This is what we want to try and understand: how do we remember people?
 
 # Wikispeedia and exploration of our data:
-To answer our question, we used data from the Wikispeedia Game3 developed by the Data Science Lab (dLab), a research group at EPFL4. The aim of this game is to navigate from one Wikipedia page to another using the links between them and create the shortest path you can. The number of articles available is only a fraction of the Wikipedia database. The choice of source and target articles is either randomly assigned by the game or chosen by the player.
+To answer our question, we used data from the Wikispeedia Game[^3] developed by the Data Science Lab (dLab), a research group at EPFL[^4]. The aim of this game is to navigate from one Wikipedia page to another using the links between them and create the shortest path you can. The number of articles available is only a fraction of the Wikipedia database. The choice of source and target articles is either randomly assigned by the game or chosen by the player.
 
 To gain insights into how people are remembered, we studied the data and first started by looking into the different article categories. Each category is a grouping of sub-categories. Fig.1.a is the representation of the three first sub-categories. We will refer to the first nodes of the category path as categories and the second nodes as sub-categories.
 
@@ -291,3 +291,4 @@ We also see that the Countries are really important in the Wikipedia architectur
 [^4]: Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
 [^5]: West R. Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts.
 [^6]: Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
+[^7] The godwin point has been reached.
