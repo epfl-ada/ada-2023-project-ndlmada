@@ -127,11 +127,11 @@ Can we find out People’s fame with our dataset?
 
 We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler [7], then one would expect that most of the player's path's penultimate page will be WW2. But now let's imagine that:
  
-250 layers went from the “WW2” page to find him
-100 players went from the “Germany” page to find him
-100 players went from the “Austria” page to find him  
-50 players went from the “Poland” page to find him
-50 players went from the “France” page to find him
+- 250 layers went from the “WW2” page to find him
+- 100 players went from the “Germany” page to find him
+- 100 players went from the “Austria” page to find him  
+- 50 players went from the “Poland” page to find him
+- 50 players went from the “France” page to find him
  
 If you now count the different categories, you will find that 250 pages have the category history and 300 pages have the category Country. But the truth is that he is most known for what he did and not for where he came from. 
  
