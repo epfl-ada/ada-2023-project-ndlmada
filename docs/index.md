@@ -190,7 +190,7 @@ Indeed, we see in Fig.9 that the distribution of the categories of the starting 
 
 
 <iframe src="start_cat.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 9 : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 9 : Distribution of the starting articles per main category</p>
 
 
 So let's now compute the pagerank on the graph where only the target - n paths are added. 
