@@ -61,7 +61,18 @@ Due to these two observations, we will focus on the three last links before reac
     <option value="bar/path_bar_Art.html" >Art</option>
     <option value="bar/path_bar_Countries.html">Countries</option>
     <option value="bar/path_bar_IT.html">IT</option>
-    <!-- Add more options as needed -->
+    <option value="bar/path_bar_Business_Studies.html">Business & Studies</option>
+    <option value="bar/path_bar_Citizenship.html">Citizenship</option>
+    <option value="bar/path_bar_Design_and_Technology.html">Design & Technology</option>
+    <option value="bar/path_bar_Everyday_life.html">Everyday Life</option>
+    <option value="bar/path_bar_Geography.html">Geography</option>
+    <option value="bar/path_bar_History.html">History</option>
+    <option value="bar/path_bar_Language_and_literature.html">Language & Litterature</option>
+    <option value="bar/path_bar_Mathematics.html">Mathematics</option>
+    <option value="bar/path_bar_Music.html">Music</option>
+    <option value="bar/path_bar_People.html">People</option>
+    <option value="bar/path_bar_Religion.html">Religion</option>
+    <option value="bar/path_bar_Science.html">Science</option>
 </select>
 <iframe name='updateMe' id="plotFrame" width="100%" height="400px" frameborder="0" src="bar/path_bar_Art.html"></iframe>
 
