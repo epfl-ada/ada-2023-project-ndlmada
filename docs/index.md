@@ -118,26 +118,28 @@ This distinction between People and non-People may be related to their sub-categ
 
 
 <iframe src="people_categories.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 : Distribution of people first subcategories</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 : Distribution of People first subcategories</p>
+
+
 Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same categories, even when those categories are less represented, such as Music, Religion, or Art (Fig. 1.b). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains the dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This suggests that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
  
 
 
 # Can we find out People’s fame with our dataset? 
 
-We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler [^7], then one would expect that most of the player's path's penultimate page will be WW2. But now let's imagine that:
+We did a lot of counting, but a count isn't perfect to really affirm a global trend. Indeed, imagine there are 550 people trying to find Hitler's page [^7], then one would expect that most of the player's path's penultimate page will be World War 2 (WW2). But now let's imagine that:
  
-- 250 layers went from the “WW2” page to find him
-- 100 players went from the “Germany” page to find him
-- 100 players went from the “Austria” page to find him  
-- 50 players went from the “Poland” page to find him
-- 50 players went from the “France” page to find him
+- 250 layers went from the “WW2” page to find it
+- 100 players went from the “Germany” page to find it
+- 100 players went from the “Austria” page to find it  
+- 50 players went from the “Poland” page to find it
+- 50 players went from the “France” page to find it
  
-If you now count the different categories, you will find that 250 pages have the category history and 300 pages have the category Country. But the truth is that he is most known for what he did and not for where he came from. 
+If you now count the different categories, you will find that 250 pages have the category history and 300 pages have the category Country. The truth is that he is most known for what he did and not for where he came from. 
  
 How can one resolve this problem and devise a kind of ranking for the pages?
  
-Use Pagerank ! 
+Use PageRank ! 
 
 
 <img src="captain_obvious.jpg" width="50%" display="block" margin-left="auto" margin-right="auto">
@@ -188,10 +190,14 @@ Indeed, we see in Fig.XXX that the distribution of the categories of the startin
 
 
 So let's now compute the pagerank on the graph where only the target - n paths are added. 
+
+
 For example, if n = 2 and we have the path “Computer → Jesus → Pikachu → France → Gay Pride,” with Gay Pride being the target, then the path taken and added to the graph would be “Jesus → Pikachu → France."
 If n = 1, the path added would be “Pikachu → France."
+
 Note that we never add the path “France → Gay Pride“ as we don’t want to deal with the disparity of the targets, and the targets will all be people, and this would totally ruin our analysis.
 Let’s do that for every path that has a People as a target. We take only the n jumps preceding the target, graph them, rank them using pagerank, and take the median of the rank of each category. This gives us a way to compare each category and see which one is more important before arriving at the target.
+
 By doing it for n from 1 to 7 and graphing the medians depending on n, we find the following graph. To understand this graph, you just have to remember two things: the smaller n is, the nearer you are reaching the target, and the more the normalised rank goes to 0, the more you are important, so lower lines are more important.
 
 
@@ -214,9 +220,12 @@ Finally, we also remark that the Country category is way less important in this 
 
 
 Is Hitler here really known for WW2 or for his links with Germany? His pagerank will tell us he is known for his link with Germany…
+
  (Note: For simplicity, we omit the fact that page rank would also take into account the number and importance of the nodes pointing to Germany, War..)
+
 This caveat could then explain the difference between the counting and pagerank analyses.
- It is important to see that this pagerank analysis doesn’t completely cancel the counting analysis done beforehand, but it comes as a complement.
+
+It is important to see that this pagerank analysis doesn’t completely cancel the counting analysis done beforehand, but it comes as a complement.
 The counting analysis states that people are in general known by what they did, and it shows the disparity of knowledge among the players. One could argue that if all the players came together, they would be able to state everything that a person did, and it shows in a way that the population never forgets.
 The pagerank analysis, on the other hand, states that a large portion of the players know most of the targets based on who they interacted with. Yes, the targets did a lot of things, but it is easier to both remember and find the person related to the target than what they achieved. Most of the players even went through the same People page to find their common target, which shows how important this People is in the path. 
 We also see that the Countries are really important in the Wikipedia architecture as they are related to most of the pages and have by far the biggest pagerank (see Fig. below), but in the paths they are not important. This consolidates the fact that the People category is important because, even with Countries being very present (and so a lot of occasions for the players to find their target via the Countries), the People category came in at the top. 
