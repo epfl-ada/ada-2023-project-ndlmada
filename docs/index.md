@@ -89,7 +89,7 @@ From the repartition among categories, we can see that the only group where ther
 <iframe src="overall_categories_gender.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 	
-<script type="text/javascript"> function loadPloPatht() {
+<script type="text/javascript"> function loadPlotPath() {
     var plotSelector = document.getElementById('plotSelectorPath');
     var plotFrame = document.getElementById('plotFramePath');
 
