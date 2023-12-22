@@ -288,7 +288,7 @@ Now let’s look at these bar plots a little more in detail. Firstly, between me
 
 If we saw you reading this right now, we would expect you to look like this : 
 
-<div class="tenor-gif-embed" data-postid="7590449" data-share-method="host" data-aspect-ratio="1.78571" data-width="100%" align-items="center"><a href="https://tenor.com/view/sheldon-cooper-why-gif-7590449">Sheldon Cooper GIF</a>from <a href="https://tenor.com/search/sheldon-gifs">Sheldon GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<div class="tenor-gif-embed" data-postid="7590449" data-share-method="host" data-aspect-ratio="1.78571" data-width="75%" align-items="center"><a href="https://tenor.com/view/sheldon-cooper-why-gif-7590449">Sheldon Cooper GIF</a>from <a href="https://tenor.com/search/sheldon-gifs">Sheldon GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 
 Yes, the categories are so unevenly distributed between men and women that this analysis is not really pertinent. So we will rather study the ‘Actors, models and celebrities’ gender split. And in this specific case, ‘People’ does rank significantly higher for women than men, insisting the existence of a bias.
