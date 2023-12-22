@@ -370,10 +370,11 @@ Regarding gender bias, we can first enlighten that the only category where parit
 
 
 ### References
-[^1]: Dunbar’s number. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720](https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720)
-[^2]: Jenkins R, Dowsett AJ, Burton AM. How many faces do people know? Proc R Soc B Biol Sci. 2018;285(1888):20181319. doi:10.1098/rspb.2018.1319
-[^3]: Wikispeedia. Accessed December 18, 2023. [https://dlab.epfl.ch/wikispeedia/play/](https://dlab.epfl.ch/wikispeedia/play/)
-[^4]: Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
-[^5]: West R. Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts.
-[^6]: Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
+[^1]: ‘Dunbar’s number’, Wikipedia. Dec. 18, 2023. Accessed: Dec. 18, 2023. [Online]. Available: [https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720](https://en.wikipedia.org/w/index.php?title=Dunbar%27s_number&oldid=1190501720)
+[^2]: R. Jenkins, A. J. Dowsett, and A. M. Burton, ‘How many faces do people know?’, Proc. R. Soc. B Biol. Sci., vol. 285, no. 1888, p. 20181319, Oct. 2018, doi: 10.1098/rspb.2018.1319.
+[^3]: ‘Wikispeedia’. Accessed: Dec. 18, 2023. [Online]. Available: [https://dlab.epfl.ch/wikispeedia/play/](https://dlab.epfl.ch/wikispeedia/play/)
+[^4]: E. D. S. Lab, ‘Data Science Lab’, dlab @ EPFL. Accessed: Dec. 18, 2023. [Online]. Available: [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
+[^5]: R. West, ‘Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts’.
+[^6]: ‘Wikipedia:WikiProject Women in Red’, Wikipedia. Dec. 14, 2023. Accessed: Dec. 18, 2023. [Online]. Available: [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
 [^7]: The godwin point has been reached.[https://en.wikipedia.org/wiki/Godwin%27s_law#:~:text=Godwin's%20law%2C%20short%20for%20Godwin's,Nazis%20or%20Hitler%20approaches%201.%22](Wikipedia - Godwin's law)
+
