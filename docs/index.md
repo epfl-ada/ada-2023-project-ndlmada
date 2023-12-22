@@ -198,7 +198,7 @@ If n = 1, the path added would be “Pikachu → France."
 Note that we never add the path “France → Gay Pride“ as we don’t want to deal with the disparity of the targets, and the targets will all be people, and this would totally ruin our analysis.
 Let’s do that for every path that has a People as a target. We take only the n jumps preceding the target, graph them, rank them using pagerank, and take the median of the rank of each category. This gives us a way to compare each category and see which one is more important before arriving at the target.
 
-By doing it for n from 1 to 7 and graphing the medians depending on n, we find the following graph. To understand this graph, you just have to remember two things: the smaller n is, the nearer you are reaching the target, and the more the normalised rank goes to 0, the more you are important, so lower lines are more important.
+By doing it for n from 1 to 7 and graphing the medians depending on n, we find the following graph. To understand this graph, you just have to remember two things: the smaller n is, the nearer you are reaching the target, and the more the normalised rank goes to 0, the more important you are, so the lower lines the more important the category is.
 
 
 
