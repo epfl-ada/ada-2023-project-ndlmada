@@ -2,7 +2,7 @@ theme: jekyll-theme-cayman
 title : "LookUp : ✨Stars✨ and how we see them"
 color:
   header: "#fff"
-  gradient_left: "#0acc65"
-  gradient_right: "#9904de"
-color.section_title : "#2e0242"
+  gradient_left: "#42f5b0"
+  gradient_right: "#6e04c4"
+color.section_title : "#6e04c4"
 logo_url: "https://ibb.co/bvk3Tg2"

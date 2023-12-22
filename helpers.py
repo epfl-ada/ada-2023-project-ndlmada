@@ -14,13 +14,13 @@ def change_characters(dict_df, dataset_name, column_name):
     """ It replaces the %xx escapes with their single-character equivalent for all the value of a specified column.
     param:
         dict_df: dict
-            dictionnary of dataframes
+            dictionary of dataframes
         dataset_name: str
             name of the dataset contain in dict_df
         column_name: str
             name of the column from which we want to replace the values
     return:
-        dict_df: the provided dictionnary of dataframe with the replaced characters
+        dict_df: the provided dictionary of dataframe with the replaced characters
      """
     dict_df[dataset_name][column_name] = [unquote(art) for art in dict_df[dataset_name][column_name]]
     return dict_df
@@ -118,7 +118,7 @@ def path_to_name(path):
 def dataset_info(dictionary, dataset_name):
     """ Display main information about a specified dataset from the given dictionary.
     params:
-        dictionnary: dict
+        dictionary: dict
             A dictionary of dataframes.
         dataset_name: str 
             The name of the dataframe to be accessed in the dictionary
