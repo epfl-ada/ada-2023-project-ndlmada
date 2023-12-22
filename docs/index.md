@@ -141,6 +141,8 @@ Use Pagerank !
 
 ![captain_obvious.jpg](Captain_obvious)
 
+<img src="captain_obvious.jpg" width="50%" align-items="center">
+
 
 
 
