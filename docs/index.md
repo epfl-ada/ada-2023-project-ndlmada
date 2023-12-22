@@ -180,17 +180,17 @@ Use Pagerank !
     plotFrameRank.src = selectedPlot;
 }</script>
 
-<img  width="80%"  id="plotFrameRank" frameborder="0" src="path/Art.png">
+<img  width="80%"  id="plotFrameRank" frameborder="0" src="rank_cat/people.png">
 
 <label for="plotSelectorRank">Select a category to plot:</label>
 <select id="plotSelectorRank" onchange="loadPlotRank()">
     <option value="rank_cat/art.png" >Art</option>
     <option value="rank_cat/business.png" >Business & Studies</option>
-    <option value="rank_cat/citizenhip.png" >Citizenship</option>
+    <option value="rank_cat/citizenship.png" >Citizenship</option>
     <option value="rank_cat/countries.png" >Countries</option>
     <option value="rank_cat/design.png" >Design & Technology</option>
     <option value="rank_cat/everyday.png" >Everyday Life</option>
-    <option value="rank_cat/geogra^hy.png" >Geography</option>
+    <option value="rank_cat/geography.png" >Geography</option>
     <option value="rank_cat/history.png" >History</option>
     <option value="rank_cat/it.png" >IT</option>
     <option value="rank_cat/language.png" >Language & Litterature</option>
