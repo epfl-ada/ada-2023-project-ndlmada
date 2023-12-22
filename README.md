@@ -66,6 +66,16 @@ To observe differences between men and women, we need to determine the gender of
 | **Week 14** | Finish Website | `Everyone` |
 |  | Clean code | `Everyone` |
 
+## Structure 
+
+- `final_notebook.ipynb` contains all the code that allowed us to do the analysis provided in our website
+- `supplementary_notebook.ipynb` contains some additional analysis that we performed during the project but eventually didn't include in the final result. This concerns mostly results that in the end weren't relevant for our research question but were still interesting nonetheless
+- `helpers.py` contains all the helper functions used in our analysis notebook to avoir overcrowding it
+- `docs` contains all the plots that we produced as well as the website
+- `dataset` contains our produced data. This is to avoid long pre-processing run times and to download the processed data in a simple and efficient manner
+- `articleAndGender.csv` contains the gender of all the studied articles 
+
+
 ## References : 
 
 [Wikispeedia](https://snap.stanford.edu/data/wikispeedia.html)
