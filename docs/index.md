@@ -54,7 +54,7 @@ Due to these two observations, we will focus on the three last links before reac
     <option value="bar/path_bar_IT.html">IT</option>
     <!-- Add more options as needed -->
 </select>
-<iframe id="plotFrame" width="100%" height="400px" frameborder="0"></iframe>
+<iframe id="plotFrame" width="100%" height="400px" frameborder="0" src=plotSelector.value></iframe>
 <script src="{{ site.baseurl }}/toggle.js"></script>
 
 
