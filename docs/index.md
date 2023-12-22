@@ -4,6 +4,7 @@ But that seems rather small, right? Think about all the people you went to schoo
 
 <div align="center"><iframe src="https://giphy.com/embed/3oEduNGzfmQkYtT916" align-items="center" display="block" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/suitsusanetwork-suits-donna-paulsen-3oEduNGzfmQkYtT916">via GIPHY</a></p></div>
 
+
 And then there’s an even larger category, comprising all the names that you know: all your relatives, colleagues, neighbours, politicians, historical figures, artists, musicians, scientists, etc. Sadly, we didn’t find any studies that managed to determine this number.
 
 Now let’s forget the people you really know and focus on those we might call celebrities—our stars. There are so many names that we know: the scientist whose theorem you studied in high school, the politician who made reforms in your country three years ago, or the athlete that you followed since primary school. Say you are a fan of Taylor Swift. You know so much about her: where she comes from, all her albums, her personal life, and the name of her cats. However, you’ve only ever vaguely heard about Napoleon and only know that he’s French. And then there’s that painter, Turner, and you only know that he was friends with Monet. Or Michelle Obama; you definitely know her because of her husband, but can you list anything that she accomplished?
@@ -17,7 +18,7 @@ To gain insights into how people are remembered, we studied the data and first s
 
 <img src="graph_1" width="45%">
 <iframe src="overall_dataset_bar.html" width="45%" height="530px" frameborder="0" position="relative">enre plot</iframe>
-<p style="text-align: center;font-size: 0.8em;"><span style="color :blue"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
+<p style="text-align: center;font-size: 0.8em;"><span style="color :blue font-style="italic"> Fig. 1 :</span> Distribution of the categories. Each article has a path of sub-categories. a) Visualisation of the first three subcategories of all articles b) Distribution of the first two subcategories.</p>
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative">enre plot</iframe>
