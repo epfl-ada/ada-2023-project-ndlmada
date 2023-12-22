@@ -22,7 +22,7 @@ To gain insights into how people are remembered, we studied the data and first s
 <iframe src="overall_dataset_bar.html" width="1100" height="530" frameborder="0" ></iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic">Fig. 2 : Distribution of the first two subcategories.</p>
 
-The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.5% of the articles visited are People, which is lower than those of non-People (Fig. 3). This low proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
+The category that interests us the most is the People one. To compare it with others, we need a better overview of their distribution across all articles. We found out that only 14.7% of the articles are about people. Even so, this category still represents the third most prominent category (Fig. 2). However, not all articles are selected as targets. Within target articles, around 11.5% of them are people, which is close to the article distribution. Looking at the paths leading to those selected targets, 25.1% of the articles visited are People, which is lower than those of non-People (Fig. 3). This low proportion is not surprising given the distribution of People/non-People articles. Yet, somehow the proportion of people in paths almost doubles compared to the proportion of articles about people in Wikipedia.
 
 
 <iframe src="Pie_paths_percentages.html" width="100%" height="400px" frameborder="0" position="relative"></iframe>
@@ -74,11 +74,11 @@ In Fig. 5, we can look at the category distribution of the three last steps for 
     <option value="path/Religion.png" >Religion</option>
     <option value="path/Science.png" >Science</option>
 </select>
-<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 5 : The categories of the last three articles visited, grouped by target categories. Each line corresponds to a path, and its colour corresponds to the category visited by the path in N-1 a) People target: within the last links, all the categories are more or less used to reach the target.  b) History target: mainly comes from History articles or often closely related subjects such as Countries, Geography, People and Religion. c) Science target: almost all of the paths come from Science-related subjects.  d) Mathematics target: almost all of the paths come from Mathematics-related subjects.</p>
+<p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 5 : The categories of the last three articles visited, grouped by target categories. Each line corresponds to a path, and its colour corresponds to the category visited by the path in N-1Here are some observations.For People target: within the last links, all the categories are more or less used to reach the target.ForHistory target: mainly comes from History articles or often closely related subjects such as Countries, Geography, People and Religion. ForScience target: almost all of the paths come from Science-related subjects. For Mathematics target: almost all of the paths come from Mathematics-related subjects.</p>
 
 
 # What about the People?
-For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, with People coming only in fourth. (Fig. 6).
+For the People target, the last links come from all categories (Fig. 5). However, the People-to-People last link is less used than other categories. Indeed, for the non-People target, the previous path stays at most in the same categories, while for People target, the most frequent previous link category is History, with People coming only in fourth (Fig. 6).
 
 
 
@@ -113,7 +113,7 @@ For the People target, the last links come from all categories (Fig. 5). However
 
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 6 : Distribution of the N-3 articles leading to a target in people (change target in selection box). The count per step was normalised by the total number of articles in each category. </p>
 
-This distinction between People and non-People may be related to their sub-categories. In comparison to those of non-People that remain in the same genre as their respective categories, the sub-categories of People vary a lot. There are 20 sub-categories of People (Fig. 6). As we can observe, the biggest sub-categories (Historical figures) can be associated with History, the most represented last article’s category before the path ends in People. 
+This distinction between People and non-People may be related to their sub-categories. In comparison to those of non-People that remain in the same genre as their respective categories, the sub-categories of People vary a lot. There are 20 sub-categories of People (Fig. 7). As we can observe, the biggest sub-categories (Historical figures) can be associated with History, the most represented last article’s category before the path ends in People. 
 
 
 
@@ -121,7 +121,7 @@ This distinction between People and non-People may be related to their sub-categ
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 7 : Distribution of People first subcategories</p>
 
 
-Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same categories, even when those categories are less represented, such as Music, Religion, or Art (Fig. 2). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains the dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This suggests that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
+Based on the results above, we concluded that, to access a target of a certain category, players tend to reach it using other articles within the same category, even when this category is less represented, such as Music, Religion, or Art (Fig. 2). This trend is particularly evident in certain categories, such as Science, where almost all the preceding links are also within the science domain. In other cases, it is less obvious, as for History, where many categories lead to it, but history remains a dominant one. However, these paths exhibit a similar tendency. The only exception is observed for the People target, as mentioned earlier. This could lead us to think that, contrary to our initial assumption about our research question, individuals are not remembered for their social circles but rather for their achievements. This is indicated by the fact that they are frequently reached through links associated with other subcategories rather than through other People.
  
 
 
@@ -186,7 +186,7 @@ We could now say that the player tends to search for People by looking at other 
  
 But that would be a bit too easy, and we want to deepen the analysis a bit. The rest of the categories seem very similar, with the mean being pretty much in the middle of the ranks.
 But maybe this importance rank changes as we approach the target nodes?
-Indeed, we see in Fig.9 that the distribution of the categories of the starting nodes is not uniform at all, with History and Geography being way more represented. This could induce a bias, as by starting with a country, one might stick with countries for 2-3 jumps before jumping into a new category, and therefore the importance of countries is artificially high in the beginning of the paths but dies down as we approach the target.
+Indeed, we see in Fig.9 that the distribution of the categories of the starting nodes is not uniform at all, with Science and Geography being way more represented. This could induce a bias, as by starting with a country, one might stick with countries for 2-3 jumps before jumping into a new category, and therefore the importance of countries is artificially high in the beginning of the paths but dies down as we approach the target.
 
 
 <iframe src="start_cat.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
