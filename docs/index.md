@@ -324,4 +324,4 @@ Yes, the categories are so unevenly distributed between men and women that this 
 [^4]: Lab EDS. Data Science Lab. dlab @ EPFL. Accessed December 18, 2023. [http://dlab.epfl.ch/](http://dlab.epfl.ch/)
 [^5]: West R. Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts.
 [^6]: Wikipedia:WikiProject Women in Red. In: Wikipedia. ; 2023. Accessed December 18, 2023. [https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435](https://en.wikipedia.org/w/index.php?title=Wikipedia:WikiProject_Women_in_Red&oldid=1189903435)
-[^7] The godwin point has been reached.
+[^7]: The godwin point has been reached.
