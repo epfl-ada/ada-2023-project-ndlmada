@@ -315,6 +315,54 @@ Yes, the categories are so unevenly distributed between men and women that this 
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. X :</span> Pie chart of perfecntages blebleble</p>
 
 
+# Let's Page Rank these gender differences  
+
+The counting analysis gave us some insight on the gender differences but it only looked at one sub-category as it was the only one which was balanced, therefore the only one  giving accurate and comparable results.
+
+With pagerank, we can avoid the target disparity problem and be more general with our conclusions.
+To do so, we create two graphs, one containing the paths where the target nodes are women (we call it the women's paths network) and the other where the target nodes are men (the men's paths network). This creates distinct graphs; we can then find two independent rankings for those graphs and then look at the difference between the two rankings.
+Are people better ranked in the women's graph and therefore more important than in the men's graph? Or is it the opposite?
+
+We have done this, and these are the results [Fig. XXX]. The graph is a bit complicated to understand, but it was made to really show the difference in rank between the two graphs.
+This graph shows the difference in ranking (and, therefore, importance) of the different pages between the women's paths network and the men's paths network.
+ We can see in grey the difference in ranking of all the pages that are not about people; it makes a nice normal distribution. Some pages are more important than others, but the mean is pretty much 0.
+ Next to this non-People mean, we have the mean of the differences in rank for the People pages. There is a slight augmentation in rank between the women's paths network and the men's paths network, but nothing significant.
+
+Now what this graph really shows us is the difference between men and women. It is pretty staggering how the entirety of the pages about women lose on average 630 places between the women's paths network and the men's paths network, and how men gain on average only 157 places between the two networks.
+
+
+# What does that mean ?
+
+It means that when players are looking for a male target they rarely go through women wikipedia pages, and they consult them way less than if they were looking for a woman. On the other hand when people are trying to find women targets they tend to pass less by men pages than if they were looking for a man but the difference is smaller. 
+
+
+This disparity is surprising in the way it affects way more the ranking of women than men.
+
+What we get from this graph is that there is a strong imbalance and women tend to be equally known by their men or women frequentations and the men are almost only known by their men frequentations. 
+
+
+
+
+
+
+
+PAGERANKTIMOOOOOOOOOOOOOOO
+
+
+
+
+
+
+
+# Conclusion and limitations
+Overall, People targets are more reached via category articles than via a social circle. However, does that mean we remember them more by their achievement? Not necessarily. In fact, in this analysis, there are many biases to consider. 
+
+First at all, as mentioned above, the Wikispeedia game is based on only a fraction of the Wikipedia database. Maybe this reduction in the number of articles introduced a bias of selection. Furthermore, since the players can choose the source-target pairs, they tend to choose articles they know more about which do not reflect the common knowledge everybody will have about the celebrities. Also, it may be that the way the articles are constructed influences the choice of the players since lots of them want to play as fast as possible. Do short articles lead to wiser choices? Do people prefer to select links that are on a table summary, on a paragraph at the top of the page, or on a legend of an image? 
+
+Lastly, something we must not forget is that Wikispeedia is a game. As for all games, some strategies are made to reach the goal more efficiently, so it might be a huge influence on the choice made by the players. Hence, people within this article selection are not reached through their social circle. They tend to be more selected by the domained they are known for. 
+Regarding gender bias, we can first enlighten that the only category where parity is met is Actors_models_and_celebrity, while women are under-represented in other fields. Therefore, it’s hard to analyse a gender bias in the whole dataset. With the page rank, we can get a more general view by avoiding the target disparity problem. As a result of these analyses, we discovered that there is indeed a bias when choosing the article’s links to follow. To find a women’s page, the player will tend to pass by both men and women's pages, while to find a man’s page, it’s rare for the player to go through a woman’s page.
+
+
 
 
 ### References
