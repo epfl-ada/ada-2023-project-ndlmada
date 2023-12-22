@@ -9,6 +9,7 @@ import requests
 import csv
 
 
+
 def change_characters(dict_df, dataset_name, column_name):
     """ It replaces the %xx escapes with their single-character equivalent for all the value of a specified column.
     param:
@@ -286,3 +287,15 @@ def create_dict_for_plotly_bar(new_path_dict):
     N2_N3 = pd.merge(new_path_dict['N2'], new_path_dict['N3'], on = 'category', how = 'outer', suffixes = ('_N2', '_N3')).fillna(0)
     final = pd.merge(N0_N1, N2_N3, on = 'category', how = 'outer').fillna(0)
     return final
+
+def transform_path_main_category(path, dict_article_target):
+    split_path = path.split(';')
+    split_cat = []
+    for art in split_path:
+         if art[0] != '.' : 
+            try: art in dict_article_target.keys()
+            except IndexError : print('Warning: not valid article:', art)
+            if art in dict_article_target.keys():
+                split_cat.append(dict_article_target[art]['main_subject'])
+    
+    return split_cat
