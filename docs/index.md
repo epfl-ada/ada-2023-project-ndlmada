@@ -45,6 +45,16 @@ Due to these two observations, we will focus on the three last links before reac
 
 <iframe src="path_categories_dropdown.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
+<label for="plotSelector">Select a category to plot:</label>
+<select id="plotSelector" onchange="loadPlot()">
+    <option value="bar/path_bar_Art.html">Art</option>
+    <option value="bar/path_bar_Countries.html">Countries</option>
+    <option value="bar/path_bar_IT.html">IT</option>
+    <!-- Add more options as needed -->
+</select>
+<iframe id="plotFrame" width="100%" height="400px" frameborder="0"></iframe>
+<script src="{{ site.baseurl }}/toggle.js"></script>
+
 
 
 In Fig. 4a, except for a few target categories such as mathematics or music that are more restricted, it seems that most of the targets are reached from articles of various categories. For the people target, the last link comes from all categories. However, the people-to-people last link seems a bit thinner than other categories targeting people. A second visualisation (Fig. 4b), confirmed those observations. Indeed, for the non-people target, the previous path stays at most in the same categories, while for people it comes from different areas and only on fourth from people. This distinction between people and non-people may be related to the second sub-categories of the article. When non-people second subcategory remains in the same genre as the primary category, the second sub-category of people varies a lot. There are 20 sub-categories of people (Fig. 5). As we can observe, the biggest sub-categories (historical figures) can be also classified as history, the most represented number of articles of this category before the path end in people.  (MAYBE; A VERIFIER).
