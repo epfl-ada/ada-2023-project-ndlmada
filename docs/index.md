@@ -349,7 +349,7 @@ What we get from this graph is that there is a strong imbalance and women tend t
 
 
 
-PAGERANKTIMOOOOOOOOOOOOOOO
+![rank_diff.jpeg](rank_diff.jpeg)
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 15 : Difference of rank between the women's paths network and the men’s path network, a node that gained rank in the men’s path network compared with his ranking in the women’s path network would be on the right of the 0 </p>
 
 
