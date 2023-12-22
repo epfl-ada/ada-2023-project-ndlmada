@@ -189,7 +189,7 @@ But maybe this importance rank changes as we approach the target nodes?
 Indeed, we see in Fig.9 that the distribution of the categories of the starting nodes is not uniform at all, with History and Geography being way more represented. This could induce a bias, as by starting with a country, one might stick with countries for 2-3 jumps before jumping into a new category, and therefore the importance of countries is artificially high in the beginning of the paths but dies down as we approach the target.
 
 
-<iframe src="line_start_cat.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<iframe src="start_cat.html" width="100%" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 <p style="text-align: center;font-size: 0.8em; font-style: italic"> Fig. 9 : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
 
 
