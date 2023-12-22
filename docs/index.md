@@ -100,6 +100,29 @@ With these calculations, we obtain the following rankings.
 If we apply gender analysis to the page rank, 
 
 
+
+
+<script type="text/javascript"> function loadPlotGender() {
+    var plotSelector = document.getElementById('plotSelectorGender');
+    var plotFrame = document.getElementById('plotFrameGender');
+
+    var selectedPlot = plotSelector.value;
+    plotFrameGender.src = selectedPlot;
+}</script>
+<iframe  id="plotFrameGender" width="100%" height="530px" frameborder="0" src="bar/path_bar_Art.html"></iframe>
+
+<label for="plotSelectorGender">Select a category to plot:</label>
+<select id="plotSelectorGender" onchange="loadPlotGender()">
+    <option value="bar/path_bar_actors, models and celebrities.html" >Actors, Models and celebrities (both genders)</option>
+    <option value="bar/path_bar_female actors.html">Actors, Models and celebrities (Women)</option>
+    <option value="bar/path_bar_male actors.html">Actors, Models and celebrities (Men)</option>
+    <option value="bar/path_bar_men.html">Men</option>
+    <option value="bar/path_bar_women.html">Women</option>
+</select>
+
+
+
+
 Overall, people targets are more reached via category articles than via a social circle. However, does that mean we remember them more by their achievement? Not necessarily. In fact, in this analysis, there are many biases to consider. 
 First at all, as mentioned above, the Wikispeedia game is based on only a fraction of the Wikipedia database. Maybe this reduction in the number of articles introduced a bias of selection. Furthermore, since the players can choose the source-target pairs, they tend to choose articles they know more about which do not reflect the common knowledge everybody will have about the celebrities. Also, it may be that the way the articles are constructed to influence the choice of the players since lots of them want to play as fast as possible. Do short articles lead to wiser choices? Do people prefer to select links that are on a table summary, on a paragraph at the top of the page, or on a legend of an image? Actually, we looked a bit at the last question, unfortunately, as for the gender dataset, the position of the link dataset is highly unbalanced. Almost all of the links are contained in paragraphs and for those that are not, they are often present multiple times on the page. Since we don’t know exactly which link with the same reference the player chose, analysis cannot be clearly conducted.
 Lastly, something we must not forget is that Wikispeedia is a game. As for all games, some strategies are made to reach the goal more efficiently, so it might be a huge influence on the choice made by the players. Hence, people within this article selection are not reached through their social circle. They tend to be more selected by the domained they are known for. Also (ADD SMALL CONCLUSION WITH THE GENDER BIAS)
