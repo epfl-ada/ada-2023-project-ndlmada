@@ -139,9 +139,8 @@ How can one resolve this problem and devise a kind of ranking for the pages?
  
 Use Pagerank ! 
 
-![captain_obvious.jpg](Captain_obvious)
 
-<img src="captain_obvious.jpg" width="50%" align-items="center">
+<img src="captain_obvious.jpg" width="50%" class="center">
 
 
 
