@@ -71,7 +71,7 @@ Due to these two observations, we will focus on the three last links before reac
 </select>
 </div>
 
-<div class="box">
+<div float="right">
 <iframe scrolling="no" width="100%" height="512" align="left" id="plotFrame" frameborder="0" src="bar/path_bar_People.html"></iframe>
 </div>
 
